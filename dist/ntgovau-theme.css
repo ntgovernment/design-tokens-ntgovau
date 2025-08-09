@@ -1,0 +1,222 @@
+:root {
+  --bs-blue: #1f1f5f;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #a60f37;
+  --bs-orange: #e35205;
+  --bs-yellow: #d6410a;
+  --bs-green: #107810;
+  --bs-teal: #007e91;
+  --bs-cyan: #127cc0;
+  --bs-white: white;
+  --bs-gray: #949391;
+  --bs-gray-dark: #595857;
+  --bs-primary: #1f1f5f;
+  --bs-secondary: #949391;
+  --bs-success: #107810;
+  --bs-info: #107cc0;
+  --bs-warning: #d6410a;
+  --bs-danger: #a60f37;
+  --bs-light: #eae9e8;
+  --bs-dark: #3b3b3a;
+  --bs-font-sans-serif: Lato,
+    system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0)
+  );
+  --bs-spacer: 1rem;
+  --bs-border-radius: 4px;
+  --bs-border-radius-sm: 2px;
+  --bs-border-radius-lg: 8px;
+  --bs-border-radius-xl: 24px;
+  --bs-border-radius-2xl: 32px;
+  --bs-border-radius-pill: 50rem;
+  --bs-border-width: 1px;
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 16px;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.5;
+  --bs-body-color: #3b3b3a;
+  --bs-body-bg: white;
+  --bs-link-color: #1f1f5f;
+  --bs-link-hover-color: #c33826;
+  --bs-focus-ring-width: 0.25rem;
+  --bs-focus-ring-opacity: 0.25;
+  --bs-focus-ring-color: #ec8c58;
+  --bs-form-control-bg: white;
+  --bs-form-control-color: #3b3b3a;
+  --bs-form-control-border-color: #dfdedd;
+}
+
+.btn {
+  --bs-btn-padding-x: 16px;
+  --bs-btn-padding-y: 8px;
+  --bs-btn-font-family: var(--bs-font-sans-serif);
+  --bs-btn-font-size: var(--bs-body-font-size);
+  --bs-btn-font-weight: 600;
+  --bs-btn-line-height: 1.5;
+  --bs-btn-color: #3b3b3a;
+  --bs-btn-bg: transparent;
+  --bs-btn-border-width: 1px;
+  --bs-btn-border-color: transparent;
+  --bs-btn-border-radius: 0px;
+  --bs-btn-box-shadow: none;
+  --bs-btn-disabled-opacity: 0.65;
+  --bs-btn-focus-box-shadow: 0 0 0 0.25rem #ec8c58;
+  display: inline-block;
+  padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+  margin-bottom: 0;
+  font-family: var(--bs-btn-font-family);
+  font-size: var(--bs-btn-font-size);
+  font-weight: var(--bs-btn-font-weight);
+  line-height: var(--bs-btn-line-height);
+  color: var(--bs-btn-color);
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: var(--bs-btn-bg);
+  border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
+  border-radius: var(--bs-btn-border-radius);
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.btn:hover {
+  color: var(--bs-btn-hover-color);
+  background-color: var(--bs-btn-hover-bg);
+  border-color: var(--bs-btn-hover-border-color);
+}
+.btn:focus, .btn:focus-visible {
+  color: var(--bs-btn-color);
+  background-color: var(--bs-btn-bg);
+  border-color: var(--bs-btn-border-color);
+  outline: 0;
+  box-shadow: var(--bs-btn-focus-box-shadow);
+}
+.btn:active, .btn.active {
+  color: var(--bs-btn-active-color);
+  background-color: var(--bs-btn-active-bg);
+  border-color: var(--bs-btn-active-border-color);
+}
+.btn:disabled, .btn.disabled {
+  color: var(--bs-btn-disabled-color);
+  pointer-events: none;
+  background-color: var(--bs-btn-disabled-bg);
+  border-color: var(--bs-btn-disabled-border-color);
+  opacity: var(--bs-btn-disabled-opacity);
+}
+
+.btn-sm {
+  --bs-btn-padding-y: 4px;
+  --bs-btn-padding-x: 12px;
+  --bs-btn-font-size: 14px;
+  --bs-btn-border-radius: 0px;
+}
+
+.btn-lg {
+  --bs-btn-padding-y: 12px;
+  --bs-btn-padding-x: 24px;
+  --bs-btn-font-size: 20px;
+  --bs-btn-border-radius: 0px;
+}
+
+.btn-primary {
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: white;
+  --bs-btn-bg: #1f1f5f;
+  --bs-btn-border-color: #1f1f5f;
+  --bs-btn-hover-color: white;
+  --bs-btn-hover-bg: #c33826;
+  --bs-btn-hover-border-color: #c33826;
+  --bs-btn-focus-shadow-rgb: var(--bs-btn-focus-box-shadow);
+  --bs-btn-active-color: white;
+  --bs-btn-active-bg: #a22f20;
+  --bs-btn-active-border-color: #a22f20;
+  --bs-btn-disabled-color: white;
+  --bs-btn-disabled-bg: #eae9e8;
+  --bs-btn-disabled-border-color: #eae9e8;
+}
+
+.btn-secondary {
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: #1f1f5f;
+  --bs-btn-bg: white;
+  --bs-btn-border-color: #1f1f5f;
+  --bs-btn-hover-color: white;
+  --bs-btn-hover-bg: #1f1f5f;
+  --bs-btn-hover-border-color: #1f1f5f;
+  --bs-btn-focus-shadow-rgb: var(--bs-btn-focus-box-shadow);
+  --bs-btn-active-color: white;
+  --bs-btn-active-bg: #a22f20;
+  --bs-btn-active-border-color: #a22f20;
+  --bs-btn-disabled-color: #777674;
+  --bs-btn-disabled-bg: #eae9e8;
+  --bs-btn-disabled-border-color: #dfdedd;
+}
+
+.btn-tertiary {
+  --bs-btn-border-radius: 2px;
+  --bs-btn-color: #1f1f5f;
+  --bs-btn-bg: transparent;
+  --bs-btn-border-color: transparent;
+  --bs-btn-hover-color: #c33826;
+  --bs-btn-hover-bg: transparent;
+  --bs-btn-hover-border-color: transparent;
+  --bs-btn-focus-shadow-rgb: var(--bs-btn-focus-box-shadow);
+  --bs-btn-active-color: white;
+  --bs-btn-active-bg: transparent;
+  --bs-btn-active-border-color: transparent;
+  --bs-btn-disabled-color: #1f1f5f;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #1f1f5f;
+}
+
+body {
+  font-family: var(--bs-font-sans-serif);
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--bs-font-sans-serif);
+  font-weight: var(--bs-headings-font-weight);
+  color: var(--bs-headings-color);
+}
+
+.text-nt-primary {
+  color: var(--bs-primary) !important;
+}
+
+.text-nt-secondary {
+  color: var(--bs-secondary) !important;
+}
+
+.bg-nt-primary {
+  background-color: var(--bs-primary) !important;
+}
+
+.bg-nt-secondary {
+  background-color: var(--bs-secondary) !important;
+}
+
+.border-nt-primary {
+  border-color: var(--bs-primary) !important;
+}
+
+.border-nt-secondary {
+  border-color: var(--bs-secondary) !important;
+}
+
+/*# sourceMappingURL=ntgovau-theme.css.map */

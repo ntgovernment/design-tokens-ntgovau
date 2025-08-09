@@ -1,0 +1,53 @@
+// NT.GOV.AU Bootstrap Theme
+// Main theme entry point
+
+// Import design tokens and CSS custom properties
+@use "../variables" as *;
+@use "../root";
+
+// Import component customizations
+@use "buttons";
+
+// Global theme styles
+body {
+  font-family: var(--bs-font-sans-serif);
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+}
+
+// Typography enhancements
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--bs-font-sans-serif);
+  font-weight: var(--bs-headings-font-weight);
+  color: var(--bs-headings-color);
+}
+
+// Utility class enhancements for NT.GOV.AU brand colors
+.text-nt-primary {
+  color: var(--bs-primary) !important;
+}
+
+.text-nt-secondary {
+  color: var(--bs-secondary) !important;
+}
+
+.bg-nt-primary {
+  background-color: var(--bs-primary) !important;
+}
+
+.bg-nt-secondary {
+  background-color: var(--bs-secondary) !important;
+}
+
+.border-nt-primary {
+  border-color: var(--bs-primary) !important;
+}
+
+.border-nt-secondary {
+  border-color: var(--bs-secondary) !important;
+}

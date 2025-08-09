@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NT.GOV.AU Bootstrap Theme Preview</title>
+    <!-- Bootstrap 5.3.0 CSS from CDN (base styles) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <!-- NT.GOV.AU Theme CSS (overrides Bootstrap styles) -->
+    <link rel="stylesheet" href="../dist/ntgovau-theme.css" />
+  </head>
+  <body>
+    <header class="container-xl">
+      <h1>NT.GOV.AU Bootstrap Theme Preview</h1>
+      <p>
+        This preview shows how Bootstrap components look with NT.GOV.AU design
+        tokens applied.
+      </p>
+    </header>
+
+    <main class="container-xl">
+      <!-- Typography Section -->
+      <section class="example-section my-5">
+        <h2>Typography</h2>
+
+        <div class="typography-example">
+          <h1>Heading 1 - 64px</h1>
+          <h2>Heading 2 - 48px</h2>
+          <h3>Heading 3 - 40px</h3>
+          <h4>Heading 4 - 32px</h4>
+          <h5>Heading 5 - 24px</h5>
+          <h6>Heading 6 - 20px</h6>
+
+          <p>
+            This is regular body text using the NT.GOV.AU typography system. The
+            font family is Lato and the size is 16px with a line height
+            optimized for readability.
+          </p>
+
+          <p class="text-muted">
+            This is muted text that uses a lighter color for secondary
+            information.
+          </p>
+        </div>
+      </section>
+
+      <!-- Button Section -->
+      <section class="example-section my-5">
+        <h2>Buttons</h2>
+
+        <h3>Button Variants</h3>
+        <div class="button-group my-2">
+          <button class="btn btn-primary">Primary Button</button>
+          <button class="btn btn-secondary">Secondary Button</button>
+          <button class="btn btn-tertiary">Tertiary Button</button>
+        </div>
+
+        <h3>Button Sizes</h3>
+        <div class="button-group my-2">
+          <button class="btn btn-primary btn-sm">Small Primary Button</button>
+          <button class="btn btn-secondary btn-sm">
+            Small Secondary Button
+          </button>
+          <button class="btn btn-tertiary btn-sm">Small Tertiary Button</button>
+        </div>
+        <div class="button-group my-2">
+          <button class="btn btn-primary">Default Primary Button</button>
+          <button class="btn btn-secondary">Default Secondary Button</button>
+          <button class="btn btn-tertiary">Default Tertiary Button</button>
+        </div>
+        <div class="button-group my-2">
+          <button class="btn btn-primary btn-lg">Large Primary Button</button>
+          <button class="btn btn-secondary btn-lg">
+            Large Secondary Button
+          </button>
+          <button class="btn btn-tertiary btn-lg">Large Tertiary Button</button>
+        </div>
+
+        <h3>Button States</h3>
+        <div class="button-group my-2">
+          <button class="btn btn-primary">Normal State</button>
+          <button class="btn btn-primary active">Active State</button>
+          <button class="btn btn-primary" disabled>Disabled State</button>
+        </div>
+      </section>
+
+      <!-- Color System Section -->
+      <section class="example-section my-5">
+        <h2>Color System</h2>
+
+        <h3>Semantic Colors (Text)</h3>
+        <div>
+          <p class="text-primary">Primary text color</p>
+          <p class="text-secondary">Secondary text color</p>
+          <p class="text-info">Info text color</p>
+          <p class="text-success">Success text color</p>
+          <p class="text-warning">Warning text color</p>
+          <p class="text-danger">Danger text color</p>
+        </div>
+
+        <h3>Background Colors</h3>
+        <div class="color-preview bg-primary">Primary Background</div>
+        <div class="color-preview bg-secondary">Secondary Background</div>
+        <div class="color-preview bg-info">Info Background</div>
+        <div class="color-preview bg-success">Success Background</div>
+        <div class="color-preview bg-warning">Warning Background</div>
+        <div class="color-preview bg-danger">Danger Background</div>
+        <div class="color-preview bg-light">Light Background</div>
+        <div class="color-preview bg-dark">Dark Background</div>
+      </section>
+
+      <!-- Integration Examples -->
+      <section class="example-section my-5">
+        <h2>React Integration Example</h2>
+        <p>To use this theme in a React application:</p>
+
+        <pre><code>// In your React component or App.js
+import 'design-tokens-ntgovau/dist/ntgovau-theme.css';
+
+function MyComponent() {
+  return (
+    &lt;div&gt;
+      &lt;h1&gt;Welcome to NT.GOV.AU&lt;/h1&gt;
+      &lt;button className="btn btn-primary"&gt;Get Started&lt;/button&gt;
+      &lt;button className="btn btn-secondary"&gt;Learn More&lt;/button&gt;
+    &lt;/div&gt;
+  );
+}</code></pre>
+
+        <h3>Theme Switching</h3>
+        <p>For multi-theme support, load different theme CSS files:</p>
+
+        <pre><code>// Theme switcher implementation
+const themes = {
+  'ntgovau': '/themes/ntgovau-theme.css',
+  'central': '/themes/central-theme.css'
+};
+
+function switchTheme(themeName) {
+  const link = document.querySelector('link[data-theme]');
+  if (link) link.remove();
+  
+  const newLink = document.createElement('link');
+  newLink.rel = 'stylesheet';
+  newLink.href = themes[themeName];
+  newLink.setAttribute('data-theme', themeName);
+  document.head.appendChild(newLink);
+}</code></pre>
+      </section>
+    </main>
+
+    <footer class="container-xl">
+      <p class="text-muted">
+        NT.GOV.AU Bootstrap Theme • Built with design tokens • Theme-switching
+        ready
+      </p>
+    </footer>
+
+    <script>
+      // Add some interactivity to demonstrate hover states
+      document.querySelectorAll(".btn").forEach((button) => {
+        button.addEventListener("click", function () {
+          if (!this.disabled) {
+            console.log("Button clicked:", this.textContent);
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

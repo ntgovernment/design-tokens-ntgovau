@@ -1,0 +1,715 @@
+// Do not edit directly. This file is generated from a design token.
+
+// Foundations (Global)
+// -----------------------------------------------------------------------------
+
+// Breakpoints
+$breakpoints-sm: 320px;
+$breakpoints-md: 768px;
+$breakpoints-lg: 992px;
+$breakpoints-xl: 1200px;
+
+// Semantic Colours
+$semantic-colours-info-blue-50: #e4f0f8ff;
+$semantic-colours-info-blue-100: #afd3eaff;
+$semantic-colours-info-blue-200: #9dc9e5ff;
+$semantic-colours-info-blue-300: #60a8d5ff;
+$semantic-colours-info-blue-400: #3892caff;
+$semantic-colours-info-blue-600: #0d67a0ff;
+$semantic-colours-info-blue-700: #0b5380ff;
+$semantic-colours-info-blue-800: #083e60ff;
+$semantic-colours-info-blue-900: #052940ff;
+$semantic-colours-info-blue-default: #107cc0ff;
+$semantic-colours-success-green-50: #cfe4cfff;
+$semantic-colours-success-green-100: #afd2afff;
+$semantic-colours-success-green-200: #88bc88ff;
+$semantic-colours-success-green-300: #60a560ff;
+$semantic-colours-success-green-400: #388f38ff;
+$semantic-colours-success-green-600: #0d640dff;
+$semantic-colours-success-green-700: #0b500bff;
+$semantic-colours-success-green-800: #083c08ff;
+$semantic-colours-success-green-900: #052805ff;
+$semantic-colours-success-green-default: #107810ff;
+$semantic-colours-warning-orange-50: #fbece7ff;
+$semantic-colours-warning-orange-100: #f1c0adff;
+$semantic-colours-warning-orange-200: #eba085ff;
+$semantic-colours-warning-orange-300: #e4805cff;
+$semantic-colours-warning-orange-400: #dd6133ff;
+$semantic-colours-warning-orange-600: #b23608ff;
+$semantic-colours-warning-orange-700: #8f2b07ff;
+$semantic-colours-warning-orange-800: #6b2105ff;
+$semantic-colours-warning-orange-900: #471603ff;
+$semantic-colours-warning-orange-default: #d6410aff;
+$semantic-colours-danger-red-50: #f7e7ebff;
+$semantic-colours-danger-red-100: #e1afbcff;
+$semantic-colours-danger-red-200: #d3879bff;
+$semantic-colours-danger-red-300: #c45f7aff;
+$semantic-colours-danger-red-400: #b53758ff;
+$semantic-colours-danger-red-600: #8a0d2eff;
+$semantic-colours-danger-red-700: #6f0a25ff;
+$semantic-colours-danger-red-800: #53081cff;
+$semantic-colours-danger-red-900: #370512ff;
+$semantic-colours-danger-red-default: #a60f37ff;
+
+// Spacing
+$spacing-0: 0px;
+$spacing-1: 1px;
+$spacing-2: 2px;
+$spacing-4: 4px;
+$spacing-8: 8px;
+$spacing-12: 12px;
+$spacing-16: 16px;
+$spacing-20: 20px;
+$spacing-24: 24px;
+$spacing-32: 32px;
+$spacing-40: 40px;
+$spacing-48: 48px;
+$spacing-52: 52px;
+$spacing-64: 64px;
+$spacing-76: 76px;
+
+// Typography Sizing
+$typography-sizing-font-size-heading-h1: 64px;
+$typography-sizing-font-size-heading-h2: 48px;
+$typography-sizing-font-size-heading-h3: 40px;
+$typography-sizing-font-size-heading-h4: 32px;
+$typography-sizing-font-size-heading-h5: 24px;
+$typography-sizing-font-size-heading-h6: 20px;
+$typography-sizing-font-size-body-sm: 14px;
+$typography-sizing-font-size-body-md: 16px;
+$typography-sizing-font-size-body-lg: 20px;
+$typography-sizing-paragraph-spacing-heading-h1: 48px;
+$typography-sizing-paragraph-spacing-heading-h2: 40px;
+$typography-sizing-paragraph-spacing-heading-h3: 36px;
+$typography-sizing-paragraph-spacing-heading-h4: 32px;
+$typography-sizing-paragraph-spacing-heading-h5: 28px;
+$typography-sizing-paragraph-spacing-heading-h6: 24px;
+$typography-sizing-paragraph-spacing-body-sm: 14px;
+$typography-sizing-paragraph-spacing-body-md: 16px;
+$typography-sizing-paragraph-spacing-body-lg: 24px;
+$typography-sizing-line-height-heading-h1: 76px;
+$typography-sizing-line-height-heading-h2: 60px;
+$typography-sizing-line-height-heading-h3: 52px;
+$typography-sizing-line-height-heading-h4: 48px;
+$typography-sizing-line-height-heading-h5: 28px;
+$typography-sizing-line-height-heading-h6: 32px;
+$typography-sizing-line-height-body-sm: 20px;
+$typography-sizing-line-height-body-md: 24px;
+$typography-sizing-line-height-body-lg: 28px;
+
+// NT.GOV.AU Brand
+// -----------------------------------------------------------------------------
+
+// Brand Colours
+$nt-gov-au-brand-colours-primary-blue-100: #b4b4caff;
+$nt-gov-au-brand-colours-primary-blue-200: #8f8fafff;
+$nt-gov-au-brand-colours-primary-blue-300: #6a6a94ff;
+$nt-gov-au-brand-colours-primary-blue-400: #44447aff;
+$nt-gov-au-brand-colours-primary-blue-600: #1a1a4fff;
+$nt-gov-au-brand-colours-primary-blue-700: #15153fff;
+$nt-gov-au-brand-colours-primary-blue-800: #0f0f2fff;
+$nt-gov-au-brand-colours-primary-blue-900: #0a0a20ff;
+$nt-gov-au-brand-colours-primary-blue-default: #1f1f5fff;
+$nt-gov-au-brand-colours-primary-orange-100: #f6c5acff;
+$nt-gov-au-brand-colours-primary-orange-200: #f1a882ff;
+$nt-gov-au-brand-colours-primary-orange-300: #ec8c58ff;
+$nt-gov-au-brand-colours-primary-orange-400: #e86f2fff;
+$nt-gov-au-brand-colours-primary-orange-600: #bd4404ff;
+$nt-gov-au-brand-colours-primary-orange-700: #973703ff;
+$nt-gov-au-brand-colours-primary-orange-800: #712902ff;
+$nt-gov-au-brand-colours-primary-orange-900: #4c1b02ff;
+$nt-gov-au-brand-colours-primary-orange-default: #e35205ff;
+$nt-gov-au-brand-colours-secondary-coral-100: #ebc5cbff;
+$nt-gov-au-brand-colours-secondary-coral-200: #e0a7b0ff;
+$nt-gov-au-brand-colours-secondary-coral-300: #d68a96ff;
+$nt-gov-au-brand-colours-secondary-coral-400: #cc6d7cff;
+$nt-gov-au-brand-colours-secondary-coral-600: #a24352ff;
+$nt-gov-au-brand-colours-secondary-coral-700: #813541ff;
+$nt-gov-au-brand-colours-secondary-coral-800: #612831ff;
+$nt-gov-au-brand-colours-secondary-coral-900: #411b21ff;
+$nt-gov-au-brand-colours-secondary-coral-default: #c25062ff;
+$nt-gov-au-brand-colours-secondary-skyblue-100: #b0d3eaff;
+$nt-gov-au-brand-colours-secondary-skyblue-200: #88bddfff;
+$nt-gov-au-brand-colours-secondary-skyblue-300: #61a8d5ff;
+$nt-gov-au-brand-colours-secondary-skyblue-400: #3992caff;
+$nt-gov-au-brand-colours-secondary-skyblue-600: #0f67a0ff;
+$nt-gov-au-brand-colours-secondary-skyblue-700: #0c5380ff;
+$nt-gov-au-brand-colours-secondary-skyblue-800: #093e60ff;
+$nt-gov-au-brand-colours-secondary-skyblue-900: #062940ff;
+$nt-gov-au-brand-colours-secondary-skyblue-default: #127cc0ff;
+$nt-gov-au-brand-colours-secondary-teal-100: #aad4daff;
+$nt-gov-au-brand-colours-secondary-teal-200: #80bec8ff;
+$nt-gov-au-brand-colours-secondary-teal-300: #55a9b6ff;
+$nt-gov-au-brand-colours-secondary-teal-400: #2a93a3ff;
+$nt-gov-au-brand-colours-secondary-teal-600: #006979ff;
+$nt-gov-au-brand-colours-secondary-teal-700: #005461ff;
+$nt-gov-au-brand-colours-secondary-teal-800: #003f48ff;
+$nt-gov-au-brand-colours-secondary-teal-900: #002a30ff;
+$nt-gov-au-brand-colours-secondary-teal-default: #007e91ff;
+$nt-gov-au-brand-colours-secondary-rubinered-100: #ddaac1ff;
+$nt-gov-au-brand-colours-secondary-rubinered-200: #cb80a1ff;
+$nt-gov-au-brand-colours-secondary-rubinered-300: #ba5582ff;
+$nt-gov-au-brand-colours-secondary-rubinered-400: #a92a63ff;
+$nt-gov-au-brand-colours-secondary-rubinered-600: #7f0039ff;
+$nt-gov-au-brand-colours-secondary-rubinered-700: #65002dff;
+$nt-gov-au-brand-colours-secondary-rubinered-800: #4c0022ff;
+$nt-gov-au-brand-colours-secondary-rubinered-900: #330017ff;
+$nt-gov-au-brand-colours-secondary-rubinered-default: #980044ff;
+$nt-gov-au-brand-colours-secondary-mauve-100: #d6c5d2ff;
+$nt-gov-au-brand-colours-secondary-mauve-200: #c1a8bbff;
+$nt-gov-au-brand-colours-secondary-mauve-300: #ad8ca5ff;
+$nt-gov-au-brand-colours-secondary-mauve-400: #986f8eff;
+$nt-gov-au-brand-colours-secondary-mauve-600: #6e4464ff;
+$nt-gov-au-brand-colours-secondary-mauve-700: #583750ff;
+$nt-gov-au-brand-colours-secondary-mauve-800: #42293cff;
+$nt-gov-au-brand-colours-secondary-mauve-900: #2c1b28ff;
+$nt-gov-au-brand-colours-secondary-mauve-default: #845278ff;
+$nt-gov-au-brand-colours-secondary-bottlegreen-100: #aacdd1ff;
+$nt-gov-au-brand-colours-secondary-bottlegreen-200: #80b4baff;
+$nt-gov-au-brand-colours-secondary-bottlegreen-300: #559ba3ff;
+$nt-gov-au-brand-colours-secondary-bottlegreen-400: #2a828cff;
+$nt-gov-au-brand-colours-secondary-bottlegreen-600: #005761ff;
+$nt-gov-au-brand-colours-secondary-bottlegreen-700: #00464eff;
+$nt-gov-au-brand-colours-secondary-bottlegreen-800: #00343aff;
+$nt-gov-au-brand-colours-secondary-bottlegreen-900: #002327ff;
+$nt-gov-au-brand-colours-secondary-bottlegreen-default: #006975ff;
+$nt-gov-au-brand-colours-secondary-ochre-100: #cda5a0ff;
+$nt-gov-au-brand-colours-secondary-ochre-200: #e19b92ff;
+$nt-gov-au-brand-colours-secondary-ochre-300: #d77a6eff;
+$nt-gov-au-brand-colours-secondary-ochre-400: #cd594aff;
+$nt-gov-au-brand-colours-secondary-ochre-600: #a22f20ff;
+$nt-gov-au-brand-colours-secondary-ochre-700: #822519ff;
+$nt-gov-au-brand-colours-secondary-ochre-800: #611c13ff;
+$nt-gov-au-brand-colours-secondary-ochre-900: #41130dff;
+$nt-gov-au-brand-colours-secondary-ochre-default: #c33826ff;
+$nt-gov-au-brand-colours-neutrals-grey-50: #f6f6f6ff;
+$nt-gov-au-brand-colours-neutrals-grey-100: #eae9e8ff;
+$nt-gov-au-brand-colours-neutrals-grey-200: #dfdeddff;
+$nt-gov-au-brand-colours-neutrals-grey-300: #d4d4d2ff;
+$nt-gov-au-brand-colours-neutrals-grey-400: #cac9c6ff;
+$nt-gov-au-brand-colours-neutrals-grey-500: #bfbebbff;
+$nt-gov-au-brand-colours-neutrals-grey-600: #949391ff;
+$nt-gov-au-brand-colours-neutrals-grey-700: #777674ff;
+$nt-gov-au-brand-colours-neutrals-grey-800: #595857ff;
+$nt-gov-au-brand-colours-neutrals-grey-900: #3b3b3aff;
+$nt-gov-au-brand-colours-neutrals-grey-white: #ffffffff;
+$nt-gov-au-brand-colours-neutrals-grey-black: #000000ff;
+$nt-gov-au-brand-colours-neutrals-beige-100: #faf9f7ff;
+$nt-gov-au-brand-colours-neutrals-beige-300: #f4f2eeff;
+$nt-gov-au-brand-colours-neutrals-beige-400: #f2efeaff;
+$nt-gov-au-brand-colours-neutrals-beige-600: #c7c5c0ff;
+$nt-gov-au-brand-colours-neutrals-beige-700: #9f9d99ff;
+$nt-gov-au-brand-colours-neutrals-beige-800: #777673ff;
+$nt-gov-au-brand-colours-neutrals-beige-900: #504f4dff;
+$nt-gov-au-brand-colours-neutrals-beige-light: #f7f5f2ff;
+$nt-gov-au-brand-colours-neutrals-beige-default: #efece6ff;
+
+// Brand Typography
+$nt-gov-au-brand-typography-font-family-primary: "Lato";
+$nt-gov-au-brand-typography-font-family-primary-alt: "Ariel";
+$nt-gov-au-brand-typography-font-weight-regular: "Regular";
+$nt-gov-au-brand-typography-font-weight-bold: "Bold";
+$nt-gov-au-brand-typography-text-colours-text-body-default: $nt-gov-au-brand-colours-neutrals-grey-900;
+$nt-gov-au-brand-typography-text-colours-text-inverted: $nt-gov-au-brand-colours-neutrals-grey-white;
+$nt-gov-au-brand-typography-text-colours-text-action: $nt-gov-au-brand-colours-primary-blue-default;
+$nt-gov-au-brand-typography-text-colours-text-heading-default: $nt-gov-au-brand-colours-neutrals-grey-900;
+$nt-gov-au-brand-typography-text-colours-text-info: $semantic-colours-info-blue-default;
+$nt-gov-au-brand-typography-text-colours-text-success: $semantic-colours-success-green-default;
+$nt-gov-au-brand-typography-text-colours-text-warning: $semantic-colours-warning-orange-default;
+$nt-gov-au-brand-typography-text-colours-text-error: $semantic-colours-danger-red-default;
+$nt-gov-au-brand-typography-text-colours-text-moderate: $nt-gov-au-brand-colours-neutrals-grey-800;
+$nt-gov-au-brand-typography-text-colours-text-accent-subtle: $nt-gov-au-brand-colours-neutrals-grey-600;
+$nt-gov-au-brand-typography-text-colours-text-hover: $nt-gov-au-brand-colours-secondary-ochre-default;
+$nt-gov-au-brand-typography-text-colours-text-disabled: $nt-gov-au-brand-colours-neutrals-grey-700;
+
+// Basic Branded Elements
+$nt-gov-au-brand-basic-branded-elements-border-width-none: $spacing-0;
+$nt-gov-au-brand-basic-branded-elements-border-width-sm: $spacing-1;
+$nt-gov-au-brand-basic-branded-elements-border-width-md: $spacing-2;
+$nt-gov-au-brand-basic-branded-elements-border-width-lg: $spacing-4;
+$nt-gov-au-brand-basic-branded-elements-corner-radius-none: $spacing-0;
+$nt-gov-au-brand-basic-branded-elements-corner-radius-sm: $spacing-2;
+$nt-gov-au-brand-basic-branded-elements-corner-radius-md: $spacing-4;
+$nt-gov-au-brand-basic-branded-elements-corner-radius-lg: $spacing-8;
+$nt-gov-au-brand-basic-branded-elements-surface-colours-page-primary: $nt-gov-au-brand-colours-neutrals-grey-white;
+$nt-gov-au-brand-basic-branded-elements-surface-colours-page-secondary: $nt-gov-au-brand-colours-neutrals-grey-50;
+$nt-gov-au-brand-basic-branded-elements-surface-colours-action-primary: $nt-gov-au-brand-colours-primary-blue-default;
+$nt-gov-au-brand-basic-branded-elements-surface-colours-background-dark: $nt-gov-au-brand-colours-primary-blue-default;
+$nt-gov-au-brand-basic-branded-elements-surface-colours-background-beige-light: $nt-gov-au-brand-colours-neutrals-beige-light;
+$nt-gov-au-brand-basic-branded-elements-surface-colours-background-beige-dark: $nt-gov-au-brand-colours-neutrals-beige-default;
+$nt-gov-au-brand-basic-branded-elements-surface-colours-action-hover: $nt-gov-au-brand-colours-secondary-ochre-default;
+$nt-gov-au-brand-basic-branded-elements-surface-colours-action-disabled: $nt-gov-au-brand-colours-neutrals-grey-100;
+$nt-gov-au-brand-basic-branded-elements-surface-colours-background-info: $semantic-colours-info-blue-50;
+$nt-gov-au-brand-basic-branded-elements-surface-colours-background-success: $semantic-colours-success-green-50;
+$nt-gov-au-brand-basic-branded-elements-surface-colours-background-warning: $semantic-colours-warning-orange-50;
+$nt-gov-au-brand-basic-branded-elements-surface-colours-background-error: $semantic-colours-danger-red-50;
+$nt-gov-au-brand-basic-branded-elements-surface-colours-action-pressed: $nt-gov-au-brand-colours-secondary-ochre-600;
+$nt-gov-au-brand-basic-branded-elements-surface-colours-action-secondary: $nt-gov-au-brand-colours-neutrals-grey-white;
+$nt-gov-au-brand-basic-branded-elements-surface-colours-background-tertiary: $nt-gov-au-brand-colours-secondary-ochre-default;
+$nt-gov-au-brand-basic-branded-elements-border-accent-colours-border-primary: $nt-gov-au-brand-colours-primary-blue-default;
+$nt-gov-au-brand-basic-branded-elements-border-accent-colours-border-secondary: $nt-gov-au-brand-colours-secondary-ochre-default;
+$nt-gov-au-brand-basic-branded-elements-border-accent-colours-border-subtle: $nt-gov-au-brand-colours-neutrals-grey-200;
+$nt-gov-au-brand-basic-branded-elements-border-accent-colours-focus-tbd: $nt-gov-au-brand-colours-primary-orange-300;
+$nt-gov-au-brand-basic-branded-elements-border-accent-colours-border-info: $semantic-colours-info-blue-default;
+$nt-gov-au-brand-basic-branded-elements-border-accent-colours-border-success: $semantic-colours-success-green-default;
+$nt-gov-au-brand-basic-branded-elements-border-accent-colours-border-warning: $semantic-colours-warning-orange-default;
+$nt-gov-au-brand-basic-branded-elements-border-accent-colours-border-error: $semantic-colours-danger-red-default;
+$nt-gov-au-brand-basic-branded-elements-icon-colours-primary: $nt-gov-au-brand-colours-primary-blue-default;
+$nt-gov-au-brand-basic-branded-elements-icon-colours-inverted: $nt-gov-au-brand-colours-neutrals-grey-white;
+$nt-gov-au-brand-basic-branded-elements-icon-colours-secondary: $nt-gov-au-brand-colours-secondary-ochre-default;
+
+// NTG Central Brand
+// -----------------------------------------------------------------------------
+
+// Colours
+$ntg-central-brand-colour-primary-blue-100: #afb5bfff;
+$ntg-central-brand-colour-primary-blue-200: #878f9fff;
+$ntg-central-brand-colour-primary-blue-300-light: #606a80ff;
+$ntg-central-brand-colour-primary-blue-400-mid: #384560ff;
+$ntg-central-brand-colour-primary-blue-600: #0d1b35ff;
+$ntg-central-brand-colour-primary-blue-700: #0b152bff;
+$ntg-central-brand-colour-primary-blue-800: #081020ff;
+$ntg-central-brand-colour-primary-blue-900: #050b15ff;
+$ntg-central-brand-colour-primary-blue-default: #102040ff;
+$ntg-central-brand-colour-primary-blue-primary-pale: #d0e0e0ff;
+$ntg-central-brand-colour-secondary-green-100-pale: #d2e7d2ff;
+$ntg-central-brand-colour-secondary-green-200: #8fc38fff;
+$ntg-central-brand-colour-secondary-green-300: #6ab06aff;
+$ntg-central-brand-colour-secondary-green-400-light: #20a030ff;
+$ntg-central-brand-colour-secondary-green-600-dark: #1b711bff;
+$ntg-central-brand-colour-secondary-green-700: #155b15ff;
+$ntg-central-brand-colour-secondary-green-800: #104410ff;
+$ntg-central-brand-colour-secondary-green-900: #0b2d0bff;
+$ntg-central-brand-colour-secondary-green-default: #208820ff;
+$ntg-central-brand-colour-tertiary-orange-100-pale: #fce4d8ff;
+$ntg-central-brand-colour-tertiary-orange-200: #f1a383ff;
+$ntg-central-brand-colour-tertiary-orange-300: #ed855aff;
+$ntg-central-brand-colour-tertiary-orange-400-mid: #e47024ff;
+$ntg-central-brand-colour-tertiary-orange-600-dark: #c43004ff;
+$ntg-central-brand-colour-tertiary-orange-700: #983005ff;
+$ntg-central-brand-colour-tertiary-orange-800: #722404ff;
+$ntg-central-brand-colour-tertiary-orange-900: #4c1803ff;
+$ntg-central-brand-colour-tertiary-orange-default: #e44808ff;
+$ntg-central-brand-colour-neutrals-grey-050: #eeeff0ff;
+$ntg-central-brand-colour-neutrals-grey-100: #e3e5e6ff;
+$ntg-central-brand-colour-neutrals-grey-200: #d5d7d9ff;
+$ntg-central-brand-colour-neutrals-grey-300: #c8cacdff;
+$ntg-central-brand-colour-neutrals-grey-400: #acb0b4ff;
+$ntg-central-brand-colour-neutrals-grey-600: #8f9396ff;
+$ntg-central-brand-colour-neutrals-grey-800-neutral: #6c7074ff;
+$ntg-central-brand-colour-neutrals-grey-850: #56585aff;
+$ntg-central-brand-colour-neutrals-grey-900: #393b3cff;
+$ntg-central-brand-colour-neutrals-grey-white: #ffffffff;
+$ntg-central-brand-colour-neutrals-grey-black: #000000ff;
+$ntg-central-brand-colour-neutrals-lightblue-100: #ecf0f0ff;
+$ntg-central-brand-colour-neutrals-lightblue-150: #dae4e5ff;
+$ntg-central-brand-colour-neutrals-lightblue-200-neutral: #dce0e4ff;
+$ntg-central-brand-colour-neutrals-lightblue-600: #b0babbff;
+$ntg-central-brand-colour-neutrals-lightblue-700: #8d9595ff;
+$ntg-central-brand-colour-neutrals-lightblue-800: #696f70ff;
+$ntg-central-brand-colour-neutrals-lightblue-900: #464a4bff;
+$ntg-central-brand-colour-neutrals-lightblue-default: #d3dfe0ff;
+
+// Brand Typography
+$ntg-central-brand-typography-font-family-primary: "Roboto";
+$ntg-central-brand-typography-text-colours-text-heading-default: $ntg-central-brand-colour-primary-blue-default;
+$ntg-central-brand-typography-text-colours-text-body-default: $ntg-central-brand-colour-primary-blue-default;
+$ntg-central-brand-typography-text-colours-text-moderate: $ntg-central-brand-colour-primary-blue-400-mid;
+$ntg-central-brand-typography-text-colours-text-accent-subtle: $ntg-central-brand-colour-primary-blue-300-light;
+$ntg-central-brand-typography-text-colours-text-action: $ntg-central-brand-colour-primary-blue-default;
+$ntg-central-brand-typography-text-colours-text-inverted: $ntg-central-brand-colour-neutrals-grey-white;
+$ntg-central-brand-typography-text-colours-text-hover: $ntg-central-brand-colour-secondary-green-600-dark;
+$ntg-central-brand-typography-text-colours-text-disabled: $ntg-central-brand-colour-neutrals-grey-800-neutral;
+$ntg-central-brand-typography-text-colours-text-info: $semantic-colours-info-blue-default;
+$ntg-central-brand-typography-text-colours-text-success: $semantic-colours-success-green-default;
+$ntg-central-brand-typography-text-colours-text-warning: $semantic-colours-warning-orange-default;
+$ntg-central-brand-typography-text-colours-text-error: $semantic-colours-danger-red-default;
+
+// Branded Elements
+$ntg-central-brand-branded-elements-surface-colours-page-primary: $ntg-central-brand-colour-neutrals-grey-white;
+$ntg-central-brand-branded-elements-surface-colours-page-secondary: $ntg-central-brand-colour-neutrals-lightblue-100;
+$ntg-central-brand-branded-elements-surface-colours-background-dark: $ntg-central-brand-colour-primary-blue-default;
+$ntg-central-brand-branded-elements-surface-colours-action-primary: $ntg-central-brand-colour-primary-blue-default;
+$ntg-central-brand-branded-elements-surface-colours-action-primary-hover: $ntg-central-brand-colour-primary-blue-400-mid;
+$ntg-central-brand-branded-elements-surface-colours-action-disabled: $ntg-central-brand-colour-neutrals-lightblue-200-neutral;
+$ntg-central-brand-branded-elements-surface-colours-background-info: $semantic-colours-info-blue-50;
+$ntg-central-brand-branded-elements-surface-colours-background-success: $semantic-colours-success-green-50;
+$ntg-central-brand-branded-elements-surface-colours-background-warning: $semantic-colours-warning-orange-50;
+$ntg-central-brand-branded-elements-surface-colours-background-error: $semantic-colours-danger-red-50;
+$ntg-central-brand-branded-elements-surface-colours-action-secondary: $ntg-central-brand-colour-neutrals-grey-white;
+$ntg-central-brand-branded-elements-surface-colours-action-secondary-hover: $ntg-central-brand-colour-primary-blue-400-mid;
+$ntg-central-brand-branded-elements-surface-colours-action-tertiary: $ntg-central-brand-colour-secondary-green-default;
+$ntg-central-brand-branded-elements-surface-colours-action-tertiary-hover: $ntg-central-brand-colour-secondary-green-400-light;
+$ntg-central-brand-branded-elements-surface-colours-action-pressed: $ntg-central-brand-colour-primary-blue-200;
+$ntg-central-brand-branded-elements-border-accent-colours-border-primary: $ntg-central-brand-colour-primary-blue-default;
+$ntg-central-brand-branded-elements-border-accent-colours-border-secondary: $ntg-central-brand-colour-secondary-green-default;
+$ntg-central-brand-branded-elements-border-accent-colours-border-subtle: $ntg-central-brand-colour-neutrals-lightblue-600;
+$ntg-central-brand-branded-elements-border-accent-colours-focus: $ntg-central-brand-colour-secondary-green-300;
+$ntg-central-brand-branded-elements-border-accent-colours-border-info: $semantic-colours-info-blue-default;
+$ntg-central-brand-branded-elements-border-accent-colours-border-success: $semantic-colours-success-green-default;
+$ntg-central-brand-branded-elements-border-accent-colours-border-warning: $semantic-colours-warning-orange-default;
+$ntg-central-brand-branded-elements-border-accent-colours-border-error: $semantic-colours-danger-red-default;
+$ntg-central-brand-branded-elements-icon-colours-primary: $ntg-central-brand-colour-primary-blue-default;
+$ntg-central-brand-branded-elements-icon-colours-inverted: $ntg-central-brand-colour-neutrals-grey-white;
+$ntg-central-brand-branded-elements-icon-colours-secondary: $ntg-central-brand-colour-secondary-green-default;
+$ntg-central-brand-branded-elements-corner-radius-none: $spacing-0;
+$ntg-central-brand-branded-elements-corner-radius-sm: $spacing-8;
+$ntg-central-brand-branded-elements-corner-radius-md: $spacing-20;
+$ntg-central-brand-branded-elements-corner-radius-lg: $spacing-32;
+$ntg-central-brand-branded-elements-border-width-none: $spacing-0;
+$ntg-central-brand-branded-elements-border-width-sm: $spacing-1;
+$ntg-central-brand-branded-elements-border-width-md: $spacing-2;
+$ntg-central-brand-branded-elements-border-width-lg: $spacing-4;
+
+// General Tokens
+// -----------------------------------------------------------------------------
+
+// Colors
+$color-ntg-ignore-primary-blue: #1f1f5fff;
+$color-ntg-ignore-primary-orange: #e35205ff;
+$color-ntg-ignore-primary-orange-half: #e3520580;
+$color-ntg-ignore-primary-sky-blue: #127cc0ff;
+$color-ntg-ignore-primary-sky-blue-30: #127cc04d;
+$color-ntg-ignore-primary-blue-tint: #e9e7edff;
+$color-ntg-ignore-primary-orange-tint: #feebdeff;
+$color-ntg-ignore-secondary-hot-coral: #c25062ff;
+$color-ntg-ignore-secondary-sky-blue: #127cc0ff;
+$color-ntg-ignore-secondary-teal-blue: #007e91ff;
+$color-ntg-ignore-secondary-rubine-red: #980044ff;
+$color-ntg-ignore-secondary-deep-mauve: #845278ff;
+$color-ntg-ignore-secondary-bottle-green: #006975ff;
+$color-ntg-ignore-secondary-ochre: #c33826ff;
+$color-ntg-ignore-neutrals-white: #ffffffff;
+$color-ntg-ignore-neutrals-light-light: #f6f6f6ff;
+$color-ntg-ignore-neutrals-grey-400: #f8f7f5ff;
+$color-ntg-ignore-neutrals-light-grey: #e9e8efff;
+$color-ntg-ignore-neutrals-light-200: #efece6ff;
+$color-ntg-ignore-neutrals-light-400: #d6d4d1ff;
+$color-ntg-ignore-neutrals-dark-100: #595959ff;
+$color-ntg-ignore-neutrals-dark-400: #494949ff;
+$color-ntg-ignore-neutrals-dark-grey: #180d0aff;
+$color-ntg-ignore-neutrals-grey-text: #454347ff;
+$color-ntg-ignore-neutrals-black: #000000ff;
+$color-ntg-ignore-semantic-info-blue: #107cc0ff;
+$color-ntg-ignore-semantic-alert-yellow: #fcc000ff;
+$color-ntg-ignore-semantic-success-green: #107810ff;
+$color-ntg-ignore-semantic-error-red: #c43004ff;
+$color-ntg-central-ignore-primary-blue-blue-default: #102040ff;
+$color-ntg-central-ignore-primary-blue-blue-mid: #304060ff;
+$color-ntg-central-ignore-primary-blue-blue-light: #506080ff;
+$color-ntg-central-ignore-primary-blue-blue-pale: #d0e0e0ff;
+$color-ntg-central-ignore-secondary-green-green-default: #208820ff;
+$color-ntg-central-ignore-secondary-green-green-dark: #107810ff;
+$color-ntg-central-ignore-secondary-green-green-mid: #20a030ff;
+$color-ntg-central-ignore-secondary-green-green-pale: #dcf0dcff;
+$color-ntg-central-ignore-tertiary-orange-orange-default: #e44808ff;
+$color-ntg-central-ignore-tertiary-orange-orange-dark: #c43004ff;
+$color-ntg-central-ignore-tertiary-orange-orange-mid: #e47024ff;
+$color-ntg-central-ignore-tertiary-orange-orange-pale: #fce4d8ff;
+$color-ntg-central-ignore-neutrals-neutral-900: #6c7074ff;
+$color-ntg-central-ignore-neutrals-neutral-400: #acb0b4ff;
+$color-ntg-central-ignore-neutrals-neutral-200: #d3dfe0ff;
+$color-ntg-central-ignore-neutrals-neutral-100: #ecf0f0ff;
+$color-ntg-central-ignore-semantic-info-blue: #107cc0ff;
+$color-ntg-central-ignore-semantic-success-green: #107810ff;
+$color-ntg-central-ignore-semantic-alert-yellow: #fcc000ff;
+$color-ntg-central-ignore-semantic-error-red: #c43004ff;
+
+// Grid
+$grid-mobile-320px: (
+  pattern: "columns",
+  gutterSize: 16px,
+  alignment: "stretch",
+  count: 4,
+  offset: 16px,
+);
+$grid-tablet-768px: (
+  pattern: "columns",
+  gutterSize: 24px,
+  alignment: "stretch",
+  count: 12,
+  offset: 32px,
+);
+$grid-desktop-992px: (
+  pattern: "columns",
+  gutterSize: 32px,
+  alignment: "stretch",
+  count: 12,
+  offset: 48px,
+);
+$grid-desktop-fixed-1200px: (
+  pattern: "columns",
+  sectionSize: 64px,
+  gutterSize: 32px,
+  alignment: "center",
+  count: 12,
+);
+
+// Effects
+$effect-shadow-small: 0px 2px 4px #bfbebbff;
+$effect-shadow-default: 0px 8px 16px #3b3b3a33;
+$effect-shadow-large: 0px 16px 48px #3b3b3a33;
+$effect-nt-gov-focus-state-border: 0px 0px 0px 4px #ec8c58ff;
+$effect-ntgc-focus-state-border: 0px 0px 0px 4px #6ab06aff;
+
+// Typography
+$font-heading-h1: (
+  fontSize: 64px,
+  textDecoration: "none",
+  fontFamily: "Lato",
+  fontWeight: 400,
+  fontStyle: "normal",
+  fontStretch: "normal",
+  letterSpacing: 0px,
+  lineHeight: 76px,
+  paragraphIndent: 0px,
+  paragraphSpacing: 48px,
+  textCase: "none",
+);
+$font-heading-h2: (
+  fontSize: 48px,
+  textDecoration: "none",
+  fontFamily: "Lato",
+  fontWeight: 400,
+  fontStyle: "normal",
+  fontStretch: "normal",
+  letterSpacing: 0px,
+  lineHeight: 60px,
+  paragraphIndent: 0px,
+  paragraphSpacing: 40px,
+  textCase: "none",
+);
+$font-heading-h3: (
+  fontSize: 40px,
+  textDecoration: "none",
+  fontFamily: "Lato",
+  fontWeight: 400,
+  fontStyle: "normal",
+  fontStretch: "normal",
+  letterSpacing: 0px,
+  lineHeight: 52px,
+  paragraphIndent: 0px,
+  paragraphSpacing: 36px,
+  textCase: "none",
+);
+$font-heading-h4: (
+  fontSize: 32px,
+  textDecoration: "none",
+  fontFamily: "Lato",
+  fontWeight: 400,
+  fontStyle: "normal",
+  fontStretch: "normal",
+  letterSpacing: 0px,
+  lineHeight: 48px,
+  paragraphIndent: 0px,
+  paragraphSpacing: 32px,
+  textCase: "none",
+);
+$font-heading-h5: (
+  fontSize: 24px,
+  textDecoration: "none",
+  fontFamily: "Lato",
+  fontWeight: 400,
+  fontStyle: "normal",
+  fontStretch: "normal",
+  letterSpacing: 0px,
+  lineHeight: 32px,
+  paragraphIndent: 0px,
+  paragraphSpacing: 28px,
+  textCase: "none",
+);
+$font-heading-h6: (
+  fontSize: 20px,
+  textDecoration: "none",
+  fontFamily: "Lato",
+  fontWeight: 400,
+  fontStyle: "normal",
+  fontStretch: "normal",
+  letterSpacing: 0px,
+  lineHeight: 32px,
+  paragraphIndent: 0px,
+  paragraphSpacing: 24px,
+  textCase: "none",
+);
+$font-body-sm-regular: (
+  fontSize: 14px,
+  textDecoration: "none",
+  fontFamily: "Lato",
+  fontWeight: 400,
+  fontStyle: "normal",
+  fontStretch: "normal",
+  letterSpacing: 0px,
+  lineHeight: 12px,
+  paragraphIndent: 0px,
+  paragraphSpacing: 14px,
+  textCase: "none",
+);
+$font-body-sm-bold: (
+  fontSize: 14px,
+  textDecoration: "none",
+  fontFamily: "Lato",
+  fontWeight: 700,
+  fontStyle: "normal",
+  fontStretch: "normal",
+  letterSpacing: 0px,
+  lineHeight: 20px,
+  paragraphIndent: 0px,
+  paragraphSpacing: 14px,
+  textCase: "none",
+);
+$font-body-default-regular: (
+  fontSize: 16px,
+  textDecoration: "none",
+  fontFamily: "Lato",
+  fontWeight: 400,
+  fontStyle: "normal",
+  fontStretch: "normal",
+  letterSpacing: 0px,
+  lineHeight: 24px,
+  paragraphIndent: 0px,
+  paragraphSpacing: 16px,
+  textCase: "none",
+);
+$font-body-default-bold: (
+  fontSize: 16px,
+  textDecoration: "none",
+  fontFamily: "Lato",
+  fontWeight: 700,
+  fontStyle: "normal",
+  fontStretch: "normal",
+  letterSpacing: 0px,
+  lineHeight: 24px,
+  paragraphIndent: 0px,
+  paragraphSpacing: 16px,
+  textCase: "none",
+);
+$font-body-lg-regular: (
+  fontSize: 20px,
+  textDecoration: "none",
+  fontFamily: "Lato",
+  fontWeight: 400,
+  fontStyle: "normal",
+  fontStretch: "normal",
+  letterSpacing: 0px,
+  lineHeight: 28px,
+  paragraphIndent: 0px,
+  paragraphSpacing: 24px,
+  textCase: "none",
+);
+$font-body-lg-bold: (
+  fontSize: 20px,
+  textDecoration: "none",
+  fontFamily: "Lato",
+  fontWeight: 700,
+  fontStyle: "normal",
+  fontStretch: "normal",
+  letterSpacing: 0px,
+  lineHeight: 28px,
+  paragraphIndent: 0px,
+  paragraphSpacing: 24px,
+  textCase: "none",
+);
+$font-link-small: (
+  fontSize: 14px,
+  textDecoration: "underline",
+  fontFamily: "Lato",
+  fontWeight: 400,
+  fontStyle: "normal",
+  fontStretch: "normal",
+  letterSpacing: 0px,
+  lineHeight: 20px,
+  paragraphIndent: 0px,
+  paragraphSpacing: 14px,
+  textCase: "none",
+);
+$font-link-default: (
+  fontSize: 16px,
+  textDecoration: "underline",
+  fontFamily: "Lato",
+  fontWeight: 400,
+  fontStyle: "normal",
+  fontStretch: "normal",
+  letterSpacing: 0px,
+  lineHeight: 20px,
+  paragraphIndent: 0px,
+  paragraphSpacing: 14px,
+  textCase: "none",
+);
+$font-caption-default: (
+  fontSize: 16px,
+  textDecoration: "none",
+  fontFamily: "Lato",
+  fontWeight: 400,
+  fontStyle: "normal",
+  fontStretch: "normal",
+  letterSpacing: 0px,
+  lineHeight: 20px,
+  paragraphIndent: 0px,
+  paragraphSpacing: 14px,
+  textCase: "none",
+);
+$font-caption-large: (
+  fontSize: 16px,
+  textDecoration: "none",
+  fontFamily: "Lato",
+  fontWeight: 400,
+  fontStyle: "normal",
+  fontStretch: "normal",
+  letterSpacing: 0px,
+  lineHeight: 24px,
+  paragraphIndent: 0px,
+  paragraphSpacing: 16px,
+  textCase: "none",
+);
+$font-tag-label-default-bold: (
+  fontSize: 16px,
+  textDecoration: "none",
+  fontFamily: "Lato",
+  fontWeight: 700,
+  fontStyle: "normal",
+  fontStretch: "normal",
+  letterSpacing: 4px,
+  lineHeight: 24px,
+  paragraphIndent: 0px,
+  paragraphSpacing: 16px,
+  textCase: "uppercase",
+);
+$font-tag-label-sm-bold: (
+  fontSize: 14px,
+  textDecoration: "none",
+  fontFamily: "Lato",
+  fontWeight: 700,
+  fontStyle: "normal",
+  fontStretch: "normal",
+  letterSpacing: 4px,
+  lineHeight: 20px,
+  paragraphIndent: 0px,
+  paragraphSpacing: 14px,
+  textCase: "uppercase",
+);
+$font-button-label-medium: (
+  fontSize: 16px,
+  textDecoration: "none",
+  fontFamily: "Lato",
+  fontWeight: 700,
+  fontStyle: "normal",
+  fontStretch: "normal",
+  letterSpacing: 0px,
+  lineHeight: 24px,
+  paragraphIndent: 0px,
+  paragraphSpacing: 16px,
+  textCase: "none",
+);
+$font-button-label-small: (
+  fontSize: 14px,
+  textDecoration: "none",
+  fontFamily: "Lato",
+  fontWeight: 700,
+  fontStyle: "normal",
+  fontStretch: "normal",
+  letterSpacing: 0px,
+  lineHeight: 20px,
+  paragraphIndent: 0px,
+  paragraphSpacing: 14px,
+  textCase: "none",
+);

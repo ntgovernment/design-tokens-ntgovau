@@ -1,0 +1,85 @@
+// CSS Custom Properties mapping for Bootstrap 5.3+ theming
+// Maps NT.GOV.AU design tokens to Bootstrap CSS custom properties
+
+@use "variables" as *;
+
+:root {
+  // Bootstrap Color System Override
+  --bs-blue: #{$nt-gov-au-brand-colours-primary-blue-default};
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #{$semantic-colours-danger-red-default};
+  --bs-orange: #{$nt-gov-au-brand-colours-primary-orange-default};
+  --bs-yellow: #{$semantic-colours-warning-orange-default};
+  --bs-green: #{$semantic-colours-success-green-default};
+  --bs-teal: #{$nt-gov-au-brand-colours-secondary-teal-default};
+  --bs-cyan: #{$nt-gov-au-brand-colours-secondary-skyblue-default};
+  --bs-white: #{$nt-gov-au-brand-colours-neutrals-grey-white};
+  --bs-gray: #{$nt-gov-au-brand-colours-neutrals-grey-600};
+  --bs-gray-dark: #{$nt-gov-au-brand-colours-neutrals-grey-800};
+
+  // Bootstrap Semantic Colors
+  --bs-primary: #{$nt-gov-au-brand-colours-primary-blue-default};
+  --bs-secondary: #{$nt-gov-au-brand-colours-neutrals-grey-600};
+  --bs-success: #{$semantic-colours-success-green-default};
+  --bs-info: #{$semantic-colours-info-blue-default};
+  --bs-warning: #{$semantic-colours-warning-orange-default};
+  --bs-danger: #{$semantic-colours-danger-red-default};
+  --bs-light: #{$nt-gov-au-brand-colours-neutrals-grey-100};
+  --bs-dark: #{$nt-gov-au-brand-colours-neutrals-grey-900};
+
+  // Typography
+  --bs-font-sans-serif: #{$nt-gov-au-brand-typography-font-family-primary},
+    system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+
+  // Bootstrap Gradient
+  --bs-gradient: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0)
+  );
+
+  // Spacing overrides (Bootstrap uses rem-based spacing)
+  --bs-spacer: 1rem;
+
+  // Border radius
+  --bs-border-radius: #{$nt-gov-au-brand-basic-branded-elements-corner-radius-md};
+  --bs-border-radius-sm: #{$nt-gov-au-brand-basic-branded-elements-corner-radius-sm};
+  --bs-border-radius-lg: #{$nt-gov-au-brand-basic-branded-elements-corner-radius-lg};
+  --bs-border-radius-xl: #{$spacing-24};
+  --bs-border-radius-2xl: #{$spacing-32};
+  --bs-border-radius-pill: 50rem;
+
+  // Border widths
+  --bs-border-width: #{$nt-gov-au-brand-basic-branded-elements-border-width-sm};
+
+  // Component specific overrides
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: #{$typography-sizing-font-size-body-md};
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: #{calc(
+      $typography-sizing-line-height-body-md /
+        $typography-sizing-font-size-body-md
+    )};
+  --bs-body-color: #{$nt-gov-au-brand-typography-text-colours-text-body-default};
+  --bs-body-bg: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-page-primary};
+
+  // Link colors
+  --bs-link-color: #{$nt-gov-au-brand-typography-text-colours-text-action};
+  --bs-link-hover-color: #{$nt-gov-au-brand-typography-text-colours-text-hover};
+
+  // Focus ring
+  --bs-focus-ring-width: 0.25rem;
+  --bs-focus-ring-opacity: 0.25;
+  --bs-focus-ring-color: #{$nt-gov-au-brand-basic-branded-elements-border-accent-colours-focus-tbd};
+
+  // Form controls
+  --bs-form-control-bg: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-page-primary};
+  --bs-form-control-color: #{$nt-gov-au-brand-typography-text-colours-text-body-default};
+  --bs-form-control-border-color: #{$nt-gov-au-brand-basic-branded-elements-border-accent-colours-border-subtle};
+}

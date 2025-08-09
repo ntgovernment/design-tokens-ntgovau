@@ -1,0 +1,145 @@
+// Button component customization using Bootstrap CSS custom properties
+// This approach maintains Bootstrap compatibility while applying NT.GOV.AU design tokens
+
+@use "../variables" as *;
+
+.btn {
+  // Override Bootstrap's button CSS custom properties with NT.GOV.AU values
+  --bs-btn-padding-x: #{$spacing-16};
+  --bs-btn-padding-y: #{$spacing-8};
+  --bs-btn-font-family: var(--bs-font-sans-serif);
+  --bs-btn-font-size: var(--bs-body-font-size);
+  --bs-btn-font-weight: 600;
+  --bs-btn-line-height: #{calc(
+      $typography-sizing-line-height-body-md /
+        $typography-sizing-font-size-body-md
+    )};
+  --bs-btn-color: #{$nt-gov-au-brand-typography-text-colours-text-body-default};
+  --bs-btn-bg: transparent;
+  --bs-btn-border-width: #{$nt-gov-au-brand-basic-branded-elements-border-width-sm};
+  --bs-btn-border-color: transparent;
+  --bs-btn-border-radius: #{$nt-gov-au-brand-basic-branded-elements-corner-radius-none};
+  --bs-btn-box-shadow: none;
+  --bs-btn-disabled-opacity: 0.65;
+  --bs-btn-focus-box-shadow: 0 0 0 0.25rem #{$nt-gov-au-brand-basic-branded-elements-border-accent-colours-focus-tbd};
+
+  // Apply the custom properties
+  display: inline-block;
+  padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+  margin-bottom: 0;
+  font-family: var(--bs-btn-font-family);
+  font-size: var(--bs-btn-font-size);
+  font-weight: var(--bs-btn-font-weight);
+  line-height: var(--bs-btn-line-height);
+  color: var(--bs-btn-color);
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: var(--bs-btn-bg);
+  border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
+  border-radius: var(--bs-btn-border-radius);
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  &:hover {
+    color: var(--bs-btn-hover-color);
+    background-color: var(--bs-btn-hover-bg);
+    border-color: var(--bs-btn-hover-border-color);
+  }
+
+  &:focus,
+  &:focus-visible {
+    color: var(--bs-btn-color);
+    background-color: var(--bs-btn-bg);
+    border-color: var(--bs-btn-border-color);
+    outline: 0;
+    box-shadow: var(--bs-btn-focus-box-shadow);
+  }
+
+  &:active,
+  &.active {
+    color: var(--bs-btn-active-color);
+    background-color: var(--bs-btn-active-bg);
+    border-color: var(--bs-btn-active-border-color);
+  }
+
+  &:disabled,
+  &.disabled {
+    color: var(--bs-btn-disabled-color);
+    pointer-events: none;
+    background-color: var(--bs-btn-disabled-bg);
+    border-color: var(--bs-btn-disabled-border-color);
+    opacity: var(--bs-btn-disabled-opacity);
+  }
+}
+
+// Size variants
+.btn-sm {
+  --bs-btn-padding-y: #{$spacing-4};
+  --bs-btn-padding-x: #{$spacing-12};
+  --bs-btn-font-size: #{$typography-sizing-font-size-body-sm};
+  --bs-btn-border-radius: #{$nt-gov-au-brand-basic-branded-elements-corner-radius-none};
+}
+
+.btn-lg {
+  --bs-btn-padding-y: #{$spacing-12};
+  --bs-btn-padding-x: #{$spacing-24};
+  --bs-btn-font-size: #{$typography-sizing-font-size-body-lg};
+  --bs-btn-border-radius: #{$nt-gov-au-brand-basic-branded-elements-corner-radius-none};
+}
+
+// Primary button variant
+.btn-primary {
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: #{$nt-gov-au-brand-typography-text-colours-text-inverted};
+  --bs-btn-bg: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-action-primary};
+  --bs-btn-border-color: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-action-primary};
+  --bs-btn-hover-color: #{$nt-gov-au-brand-typography-text-colours-text-inverted};
+  --bs-btn-hover-bg: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-action-hover};
+  --bs-btn-hover-border-color: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-action-hover};
+  --bs-btn-focus-shadow-rgb: var(--bs-btn-focus-box-shadow);
+  --bs-btn-active-color: #{$nt-gov-au-brand-typography-text-colours-text-inverted};
+  --bs-btn-active-bg: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-action-pressed};
+  --bs-btn-active-border-color: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-action-pressed};
+  --bs-btn-disabled-color: #{$nt-gov-au-brand-typography-text-colours-text-inverted};
+  --bs-btn-disabled-bg: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-action-disabled};
+  --bs-btn-disabled-border-color: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-action-disabled};
+}
+
+// Secondary button variant
+.btn-secondary {
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-action-primary};
+  --bs-btn-bg: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-action-secondary};
+  --bs-btn-border-color: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-action-primary};
+  --bs-btn-hover-color: #{$nt-gov-au-brand-typography-text-colours-text-inverted};
+  --bs-btn-hover-bg: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-action-primary};
+  --bs-btn-hover-border-color: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-action-primary};
+  --bs-btn-focus-shadow-rgb: var(--bs-btn-focus-box-shadow);
+  --bs-btn-active-color: #{$nt-gov-au-brand-typography-text-colours-text-inverted};
+  --bs-btn-active-bg: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-action-pressed};
+  --bs-btn-active-border-color: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-action-pressed};
+  --bs-btn-disabled-color: #{$nt-gov-au-brand-typography-text-colours-text-disabled};
+  --bs-btn-disabled-bg: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-action-disabled};
+  --bs-btn-disabled-border-color: #{$nt-gov-au-brand-basic-branded-elements-border-accent-colours-border-subtle};
+}
+
+// Tertiary variant
+.btn-tertiary {
+  --bs-btn-border-radius: #{$nt-gov-au-brand-basic-branded-elements-corner-radius-sm};
+  --bs-btn-color: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-action-primary};
+  --bs-btn-bg: transparent;
+  --bs-btn-border-color: transparent;
+  --bs-btn-hover-color: #{$nt-gov-au-brand-colours-secondary-ochre-default};
+  --bs-btn-hover-bg: transparent;
+  --bs-btn-hover-border-color: transparent;
+  --bs-btn-focus-shadow-rgb: var(--bs-btn-focus-box-shadow);
+  --bs-btn-active-color: #{$nt-gov-au-brand-typography-text-colours-text-inverted};
+  --bs-btn-active-bg: transparent;
+  --bs-btn-active-border-color: transparent;
+  --bs-btn-disabled-color: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-action-primary};
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-action-primary};
+}

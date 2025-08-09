@@ -1,0 +1,39 @@
+{
+  "name": "design-tokens-ntgovau",
+  "version": "1.0.0",
+  "description": "NT.GOV.AU Bootstrap theme based on design tokens",
+  "keywords": [
+    "design-tokens",
+    "bootstrap",
+    "theme",
+    "ntgovau",
+    "css"
+  ],
+  "main": "dist/ntgovau-theme.css",
+  "files": [
+    "dist/",
+    "_variables.scss",
+    "_root.scss",
+    "src/",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "sass src/index.scss dist/ntgovau-theme.css --style=compressed --source-map",
+    "build:dev": "sass src/index.scss dist/ntgovau-theme.css --style=expanded --source-map",
+    "watch": "sass src/index.scss dist/ntgovau-theme.css --watch --style=expanded --source-map",
+    "build:all": "npm run build:dev && npm run build",
+    "preview": "npm run build:dev && echo Open examples/preview.html in your browser"
+  },
+  "devDependencies": {
+    "sass": "^1.69.0"
+  },
+  "peerDependencies": {
+    "bootstrap": "^5.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ntgovernment/design-tokens-ntgovau.git"
+  },
+  "license": "MIT",
+  "author": "NT Government"
+}
