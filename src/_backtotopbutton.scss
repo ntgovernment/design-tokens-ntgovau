@@ -1,0 +1,18 @@
+@use "../variables" as *;
+
+.btn.back-to-top {
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: #{$nt-gov-au-brand-typography-text-colours-text-inverted};
+  --bs-btn-bg: #{$nt-gov-au-brand-colours-secondary-ochre-default};
+  --bs-btn-border-color: #{$nt-gov-au-brand-colours-secondary-ochre-default};
+  --bs-btn-hover-color: #{$nt-gov-au-brand-typography-text-colours-text-inverted};
+  --bs-btn-hover-bg: #{$nt-gov-au-brand-colours-secondary-ochre-600};
+  --bs-btn-hover-border-color: #{$nt-gov-au-brand-colours-secondary-ochre-600};
+  --bs-btn-focus-shadow-rgb: var(--bs-btn-focus-box-shadow);
+  --bs-btn-active-color: #{$nt-gov-au-brand-typography-text-colours-text-inverted};
+  --bs-btn-active-bg: #{$nt-gov-au-brand-colours-secondary-ochre-600};
+  --bs-btn-active-border-color: #{$nt-gov-au-brand-colours-secondary-ochre-600};
+  --bs-btn-disabled-color: #{$nt-gov-au-brand-typography-text-colours-text-inverted};
+  --bs-btn-disabled-bg: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-action-disabled};
+  --bs-btn-disabled-border-color: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-action-disabled};
+}

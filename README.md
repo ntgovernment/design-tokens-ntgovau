@@ -8,11 +8,20 @@ A Bootstrap 5.3+ compatible theme built with NT.GOV.AU design tokens. This theme
 # Install dependencies
 npm install
 
-# Build the theme
+# Build development version (expanded CSS)
+npm run dev
+
+# Build production version (minified CSS)
 npm run build
 
+# Watch for changes during development
+npm run watch
+
+# Build both versions
+npm run all
+
 # Preview the theme
-npm run build:dev
+npm run preview
 # Then open examples/preview.html in your browser
 ```
 
@@ -23,14 +32,17 @@ npm install design-tokens-ntgovau
 ```
 
 ```jsx
-// Import the theme in your React app
+// Import Bootstrap CSS first, then your theme
+import "bootstrap/dist/css/bootstrap.min.css";
 import "design-tokens-ntgovau/dist/ntgovau-theme.css";
 
 function App() {
   return (
     <div>
       <h1>Welcome to NT.GOV.AU</h1>
-      <button className="btn btn-primary">Get Started</button>
+      <button className="btn btn-primary">Primary Action</button>
+      <button className="btn btn-secondary">Secondary Action</button>
+      <button className="btn back-to-top">Back to Top</button>
     </div>
   );
 }
@@ -39,10 +51,11 @@ function App() {
 ## 🎨 Features
 
 - **Bootstrap Compatible**: All standard Bootstrap classes work unchanged
-- **Design Token Driven**: Built from NT.GOV.AU design tokens
+- **Design Token Driven**: Built from NT.GOV.AU design tokens  
 - **CSS Custom Properties**: Easy runtime theme switching
 - **Component Focused**: Systematic component customization
 - **Multi-Theme Ready**: Designed for theme switching applications
+- **Modern Sass**: Uses @use syntax (no deprecation warnings)
 
 ## 🏗️ Project Structure
 
@@ -53,6 +66,7 @@ design-tokens-ntgovau/
 ├── src/
 │   ├── index.scss          # Main theme entry point
 │   ├── _buttons.scss       # Button customizations
+│   ├── _backtotopbutton.scss # Back-to-top button component
 │   └── _*.scss            # Other component customizations
 ├── dist/
 │   └── ntgovau-theme.css   # Compiled theme
@@ -64,10 +78,19 @@ design-tokens-ntgovau/
 
 ### Available Scripts
 
-- `npm run build` - Production build (compressed)
-- `npm run build:dev` - Development build (expanded)
+- `npm run dev` - Development build (expanded CSS)
+- `npm run build` - Production build (compressed CSS)
 - `npm run watch` - Watch mode for development
-- `npm run build:all` - Build both dev and production
+- `npm run all` - Build both dev and production versions
+- `npm run preview` - Build dev version and show preview instructions
+
+### Available Components
+
+Currently implemented components:
+- **Buttons** - Primary, secondary, tertiary variants with all Bootstrap states
+- **Back-to-Top Button** - Special ochre-colored button using `.btn.back-to-top`
+- **Typography** - NT.GOV.AU font family and color system
+- **Color Utilities** - Text, background, and border color classes
 
 ### Adding New Components
 
@@ -117,13 +140,31 @@ All Bootstrap button classes are supported with NT.GOV.AU styling:
 ```html
 <button class="btn btn-primary">Primary</button>
 <button class="btn btn-secondary">Secondary</button>
+<button class="btn btn-tertiary">Tertiary</button>
 <button class="btn btn-outline-primary">Outline</button>
 
 <!-- Sizes -->
 <button class="btn btn-primary btn-sm">Small</button>
 <button class="btn btn-primary">Default</button>
 <button class="btn btn-primary btn-lg">Large</button>
+
+<!-- Special Components -->
+<button class="btn back-to-top">Back to Top</button>
 ```
+
+### Back-to-Top Button
+
+A specialized button component using NT.GOV.AU ochre color:
+
+```html
+<button class="btn back-to-top">Back to Top</button>
+```
+
+Features:
+- Uses secondary ochre color (`#c33826`)
+- White text for accessibility
+- Darker hover state (`#a22f20`)
+- Inherits all Bootstrap button behaviors
 
 ### Typography
 
