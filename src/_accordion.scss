@@ -1,12 +1,17 @@
 @use "../variables" as *;
+@use "sass:string";
+@use "sass:meta";
 
 // Accordion component customization using Bootstrap CSS custom properties
 // This approach maintains Bootstrap compatibility while applying NT.GOV.AU design tokens
 $accordion-transition: all 0.2s ease-in-out;
-$accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{var(--primary)}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
-$accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{var(--primary)}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+$accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23#{string.slice(meta.inspect($nt-gov-au-brand-colours-primary-blue-default), 2)}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+$accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23#{string.slice(meta.inspect($nt-gov-au-brand-colours-primary-blue-default), 2)}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+$accordion-button-hover-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23#{string.slice(meta.inspect($nt-gov-au-brand-colours-secondary-ochre-default), 2)}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
 $accordion-icon-transition: transform 0.2s ease-in-out;
-$accordion-icon-transform: rotate(-180deg);
+$accordion-icon-transform: rotate(
+  180deg
+); // Changed to 180deg (pointing up when expanded)
 
 .accordion {
   // Override Bootstrap's accordion CSS custom properties with NT.GOV.AU values
@@ -24,14 +29,13 @@ $accordion-icon-transform: rotate(-180deg);
   --bs-accordion-btn-font-size: #{$typography-sizing-font-size-heading-h5};
   --bs-accordion-btn-font-weight: 500;
   --bs-accordion-btn-line-height: #{$typography-sizing-line-height-heading-h5};
-  --bs-accordion-btn-icon: #{escape-svg($accordion-button-icon)};
+  --bs-accordion-btn-icon: #{$accordion-button-icon};
+  --bs-accordion-btn-icon-width: 1.25rem;
   --bs-accordion-btn-icon-transform: #{$accordion-icon-transform};
   --bs-accordion-btn-icon-transition: #{$accordion-icon-transition};
+  --bs-accordion-btn-active-icon: #{$accordion-button-active-icon};
   --bs-accordion-btn-focus-border-color: #{$color-ntg-ignore-primary-sky-blue-30};
-  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem #{rgba(
-      $color-ntg-ignore-primary-sky-blue-30,
-      0.25
-    )};
+  --bs-accordion-btn-focus-box-shadow: #{$effect-nt-gov-focus-state-border};
   --bs-accordion-body-padding-x: #{$spacing-24};
   --bs-accordion-body-padding-y: #{$spacing-24};
   --bs-accordion-active-color: var(--primary);
@@ -58,7 +62,17 @@ $accordion-icon-transform: rotate(-180deg);
   }
 
   &:hover {
-    background-color: #{$color-ntg-ignore-neutrals-grey-400};
+    color: #{$nt-gov-au-brand-colours-secondary-ochre-default};
+
+    &::after {
+      background-image: #{$accordion-button-hover-icon};
+    }
+  }
+
+  &:not(.collapsed):hover {
+    &::after {
+      background-image: #{$accordion-button-hover-icon};
+    }
   }
 
   &:focus {
@@ -79,11 +93,14 @@ $accordion-icon-transform: rotate(-180deg);
     background-repeat: no-repeat;
     background-size: var(--bs-accordion-btn-icon-width);
     transition: var(--bs-accordion-btn-icon-transition);
+    transform: rotate(0deg); // Default state: pointing down
   }
 
   &:not(.collapsed)::after {
     background-image: var(--bs-accordion-btn-active-icon);
-    transform: var(--bs-accordion-btn-icon-transform);
+    transform: var(
+      --bs-accordion-btn-icon-transform
+    ); // Expanded state: pointing up
   }
 }
 

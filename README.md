@@ -36,6 +36,12 @@ npm install design-tokens-ntgovau
 import "bootstrap/dist/css/bootstrap.min.css";
 import "design-tokens-ntgovau/dist/ntgovau-theme.css";
 
+// For interactive components (accordion, modal, etc.),
+// also import Bootstrap JavaScript
+import * as bootstrap from "bootstrap";
+// OR import specific components:
+// import { Collapse } from 'bootstrap';
+
 function App() {
   return (
     <div>
@@ -53,13 +59,19 @@ function App() {
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
             >
               Accordion Item #1
             </button>
           </h2>
-          <div id="collapseOne" className="accordion-collapse collapse show">
+          <div
+            id="collapseOne"
+            className="accordion-collapse collapse show"
+            data-bs-parent="#accordionExample"
+          >
             <div className="accordion-body">
-              This is the first item's accordion body with NT.GOV.AU styling.
+              <strong>This is the first item's accordion body.</strong>
             </div>
           </div>
         </div>
@@ -67,6 +79,34 @@ function App() {
     </div>
   );
 }
+```
+
+## 📋 JavaScript Dependencies
+
+For interactive components like accordions, modals, dropdowns, etc., you'll need to include Bootstrap's JavaScript:
+
+### CDN (HTML)
+
+```html
+<!-- Include before closing </body> tag -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+```
+
+### NPM/Webpack
+
+```javascript
+// Import all Bootstrap JS
+import * as bootstrap from "bootstrap";
+
+// Or import specific components
+import { Collapse, Modal, Dropdown } from "bootstrap";
+```
+
+### React with Bootstrap
+
+```jsx
+// For React projects, consider using react-bootstrap instead
+npm install react-bootstrap bootstrap
 ```
 
 ## 🎨 Features
@@ -86,14 +126,16 @@ design-tokens-ntgovau/
 ├── _root.scss              # CSS custom properties mapping
 ├── src/
 │   ├── index.scss          # Main theme entry point
-│   ├── _buttons.scss       # Button customizations
-│   ├── _backtotopbutton.scss # Back-to-top button component
-│   ├── _accordion.scss     # Accordion component with bottom-border styling
-│   └── _*.scss            # Other component customizations
+│   ├── _buttons.scss       # Button customizations (primary, secondary, tertiary)
+│   ├── _backtotopbutton.scss # Back-to-top button component (ochre styling)
+│   ├── _accordion.scss     # Complete accordion with NT.GOV.AU styling
+│   └── _*.scss            # Other component customizations (as added)
 ├── dist/
-│   └── ntgovau-theme.css   # Compiled theme
-├── examples/              # Usage examples and previews
-└── package.json          # Build configuration
+│   └── ntgovau-theme.css   # Compiled theme CSS
+├── examples/
+│   └── preview.html        # Complete preview with working components
+├── package.json            # Build configuration and scripts
+└── README.md              # This documentation
 ```
 
 ## 🔧 Development
@@ -112,7 +154,13 @@ Currently implemented components:
 
 - **Buttons** - Primary, secondary, tertiary variants with all Bootstrap states
 - **Back-to-Top Button** - Special ochre-colored button using `.btn.back-to-top`
-- **Accordion** - Full Bootstrap 5.2+ accordion with NT.GOV.AU styling, bottom-border-only design, and enhanced focus states for accessibility
+- **Accordion** - Complete Bootstrap 5.2+ accordion implementation with:
+  - NT.GOV.AU color scheme (primary blue default, ochre hover/focus)
+  - Bottom-border-only styling (no full borders)
+  - Enhanced focus states with orange border (`$effect-nt-gov-focus-state-border`)
+  - Proper icon rotation (down when collapsed, up when expanded)
+  - Hover states with ochre text and icon colors
+  - Responsive padding and typography
 - **Typography** - NT.GOV.AU font family and color system
 - **Color Utilities** - Text, background, and border color classes
 
@@ -191,6 +239,99 @@ Features:
 - Darker hover state (`#a22f20`)
 - Inherits all Bootstrap button behaviors
 
+### Accordion
+
+A complete Bootstrap 5.2+ accordion implementation with NT.GOV.AU styling:
+
+```html
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button
+        class="accordion-button"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseOne"
+        aria-expanded="true"
+        aria-controls="collapseOne"
+      >
+        Accordion Item #1
+      </button>
+    </h2>
+    <div
+      id="collapseOne"
+      class="accordion-collapse collapse show"
+      data-bs-parent="#accordionExample"
+    >
+      <div class="accordion-body">
+        <strong>This is the first item's accordion body.</strong>
+        Content goes here with proper NT.GOV.AU typography styling.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button
+        class="accordion-button collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseTwo"
+        aria-expanded="false"
+        aria-controls="collapseTwo"
+      >
+        Accordion Item #2
+      </button>
+    </h2>
+    <div
+      id="collapseTwo"
+      class="accordion-collapse collapse"
+      data-bs-parent="#accordionExample"
+    >
+      <div class="accordion-body">
+        This content is hidden by default until the user expands it.
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+#### Accordion Features
+
+- **Color Scheme**: 
+  - Default: Primary blue text and icons (`#1f1f5f`)
+  - Hover: Ochre text and icons (`#c33826`)
+  - Focus: Orange border with proper box-shadow
+- **Border Styling**: Only bottom borders for a clean, minimal look
+- **Icon Behavior**: 
+  - Collapsed state: Chevron pointing down
+  - Expanded state: Chevron pointing up with smooth rotation
+  - Hover state: Icons change to ochre color
+- **Accessibility**: 
+  - Enhanced focus states with `$effect-nt-gov-focus-state-border`
+  - Complete border focus indicator (not just bottom border)
+  - Proper ARIA attributes maintained
+- **Typography**: Uses NT.GOV.AU font family and sizing
+- **Interactive States**:
+  - Default: Blue text and icon
+  - Hover: Ochre text and icon
+  - Expanded: Default active styling
+  - Expanded + Hover: Ochre text and icon
+
+#### JavaScript Requirement
+
+Accordions require Bootstrap JavaScript for collapse functionality:
+
+```html
+<!-- Bootstrap Bundle includes Collapse component -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+```
+
+Or import specifically in JavaScript:
+
+```javascript
+import { Collapse } from 'bootstrap';
+```
+
 ### Typography
 
 Bootstrap typography classes with NT.GOV.AU fonts and sizing:
@@ -224,9 +365,16 @@ To create additional themes (e.g., Central Australia variant):
 
 ## 📖 Examples
 
-- `examples/preview.html` - Complete theme preview
-- `examples/react-example.jsx` - Basic React integration
-- `examples/ThemeSwitcher.jsx` - Theme switching implementation
+- `examples/preview.html` - Complete theme preview with working accordion and Bootstrap JavaScript
+- `examples/react-example.jsx` - Basic React integration (if available)
+- `examples/ThemeSwitcher.jsx` - Theme switching implementation (if available)
+
+The preview file includes:
+- All button variants and states
+- Working accordion with Bootstrap JavaScript
+- Typography examples
+- Color system demonstrations
+- Interactive component examples
 
 ## 🛠️ CSS Custom Properties
 
