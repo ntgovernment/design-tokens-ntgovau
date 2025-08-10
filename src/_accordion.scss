@@ -1,0 +1,131 @@
+@use "../variables" as *;
+
+// Accordion component customization using Bootstrap CSS custom properties
+// This approach maintains Bootstrap compatibility while applying NT.GOV.AU design tokens
+$accordion-transition: all 0.2s ease-in-out;
+$accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{var(--primary)}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+$accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{var(--primary)}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+$accordion-icon-transition: transform 0.2s ease-in-out;
+$accordion-icon-transform: rotate(-180deg);
+
+.accordion {
+  // Override Bootstrap's accordion CSS custom properties with NT.GOV.AU values
+  --bs-accordion-color: #{$color-ntg-ignore-neutrals-grey-text};
+  --bs-accordion-bg: #{$nt-gov-au-brand-colours-neutrals-grey-white};
+  --bs-accordion-transition: #{$accordion-transition};
+  --bs-accordion-border-width: #{$nt-gov-au-brand-basic-branded-elements-border-width-sm};
+  --bs-accordion-border-radius: #{$nt-gov-au-brand-basic-branded-elements-corner-radius-none};
+  --bs-accordion-inner-border-radius: #{$nt-gov-au-brand-basic-branded-elements-corner-radius-none};
+  --bs-accordion-btn-padding-x: #{$spacing-24};
+  --bs-accordion-btn-padding-y: #{$spacing-24};
+  --bs-accordion-btn-color: var(--primary);
+  --bs-accordion-btn-bg: #{$nt-gov-au-brand-colours-neutrals-grey-white};
+  --bs-accordion-btn-font-family: #{$nt-gov-au-brand-typography-font-family-primary};
+  --bs-accordion-btn-font-size: #{$typography-sizing-font-size-heading-h5};
+  --bs-accordion-btn-font-weight: 500;
+  --bs-accordion-btn-line-height: #{$typography-sizing-line-height-heading-h5};
+  --bs-accordion-btn-icon: #{escape-svg($accordion-button-icon)};
+  --bs-accordion-btn-icon-transform: #{$accordion-icon-transform};
+  --bs-accordion-btn-icon-transition: #{$accordion-icon-transition};
+  --bs-accordion-btn-focus-border-color: #{$color-ntg-ignore-primary-sky-blue-30};
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem #{rgba(
+      $color-ntg-ignore-primary-sky-blue-30,
+      0.25
+    )};
+  --bs-accordion-body-padding-x: #{$spacing-24};
+  --bs-accordion-body-padding-y: #{$spacing-24};
+  --bs-accordion-active-color: var(--primary);
+  --bs-accordion-active-bg: $color-ntg-ignore-neutrals-grey-400;
+}
+
+// Accordion button customizations
+.accordion-button {
+  //   font-family: var(--bs-accordion-btn-font-family);
+  font-weight: var(--bs-accordion-btn-font-weight);
+  font-size: var(--bs-accordion-btn-font-size);
+  line-height: var(--bs-accordion-btn-line-height);
+
+  // Only show bottom border
+  border: none;
+  border-bottom: var(--bs-accordion-border-width) solid
+    var(--bs-accordion-border-color);
+
+  &:not(.collapsed) {
+    color: var(--bs-accordion-active-color);
+    background-color: var(--bs-accordion-active-bg);
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0
+      var(--bs-accordion-border-color);
+  }
+
+  &:hover {
+    background-color: #{$color-ntg-ignore-neutrals-grey-400};
+  }
+
+  &:focus {
+    z-index: 3;
+    border: var(--bs-accordion-border-width) solid
+      var(--bs-accordion-btn-focus-border-color);
+    outline: 0;
+    box-shadow: var(--bs-accordion-btn-focus-box-shadow);
+  }
+
+  &::after {
+    flex-shrink: 0;
+    width: var(--bs-accordion-btn-icon-width);
+    height: var(--bs-accordion-btn-icon-width);
+    margin-left: auto;
+    content: "";
+    background-image: var(--bs-accordion-btn-icon);
+    background-repeat: no-repeat;
+    background-size: var(--bs-accordion-btn-icon-width);
+    transition: var(--bs-accordion-btn-icon-transition);
+  }
+
+  &:not(.collapsed)::after {
+    background-image: var(--bs-accordion-btn-active-icon);
+    transform: var(--bs-accordion-btn-icon-transform);
+  }
+}
+
+// Accordion body customizations
+.accordion-body {
+  //   font-family: #{$nt-gov-au-brand-typography-font-family-primary};
+  font-size: #{$typography-sizing-font-size-body-md};
+  line-height: #{$typography-sizing-line-height-body-md};
+  color: #{$nt-gov-au-brand-typography-text-colours-text-body-default};
+}
+
+// Accordion item customizations for consistent spacing
+.accordion-item {
+  border: none;
+  &:first-of-type {
+    border-top-left-radius: var(--bs-accordion-border-radius);
+    border-top-right-radius: var(--bs-accordion-border-radius);
+
+    .accordion-button {
+      border-top-left-radius: var(--bs-accordion-inner-border-radius);
+      border-top-right-radius: var(--bs-accordion-inner-border-radius);
+    }
+  }
+
+  &:last-of-type {
+    border-bottom-right-radius: var(--bs-accordion-border-radius);
+    border-bottom-left-radius: var(--bs-accordion-border-radius);
+
+    .accordion-button {
+      &.collapsed {
+        border-bottom-right-radius: var(--bs-accordion-inner-border-radius);
+        border-bottom-left-radius: var(--bs-accordion-inner-border-radius);
+      }
+    }
+
+    .accordion-collapse {
+      border-bottom-right-radius: var(--bs-accordion-border-radius);
+      border-bottom-left-radius: var(--bs-accordion-border-radius);
+    }
+  }
+
+  &:not(:first-of-type) {
+    border-top: 0;
+  }
+}

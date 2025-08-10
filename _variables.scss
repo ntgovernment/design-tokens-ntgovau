@@ -91,8 +91,8 @@ $typography-sizing-line-height-heading-h1: 76px;
 $typography-sizing-line-height-heading-h2: 60px;
 $typography-sizing-line-height-heading-h3: 52px;
 $typography-sizing-line-height-heading-h4: 48px;
-$typography-sizing-line-height-heading-h5: 28px;
-$typography-sizing-line-height-heading-h6: 32px;
+$typography-sizing-line-height-heading-h5: 36px;
+$typography-sizing-line-height-heading-h6: 28px;
 $typography-sizing-line-height-body-sm: 20px;
 $typography-sizing-line-height-body-md: 24px;
 $typography-sizing-line-height-body-lg: 28px;
@@ -206,7 +206,7 @@ $nt-gov-au-brand-colours-neutrals-beige-default: #efece6ff;
 
 // Brand Typography
 $nt-gov-au-brand-typography-font-family-primary: "Lato";
-$nt-gov-au-brand-typography-font-family-primary-alt: "Ariel";
+$nt-gov-au-brand-typography-font-family-primary-alt: "Arial";
 $nt-gov-au-brand-typography-font-weight-regular: "Regular";
 $nt-gov-au-brand-typography-font-weight-bold: "Bold";
 $nt-gov-au-brand-typography-text-colours-text-body-default: $nt-gov-au-brand-colours-neutrals-grey-900;
@@ -258,109 +258,6 @@ $nt-gov-au-brand-basic-branded-elements-icon-colours-primary: $nt-gov-au-brand-c
 $nt-gov-au-brand-basic-branded-elements-icon-colours-inverted: $nt-gov-au-brand-colours-neutrals-grey-white;
 $nt-gov-au-brand-basic-branded-elements-icon-colours-secondary: $nt-gov-au-brand-colours-secondary-ochre-default;
 
-// NTG Central Brand
-// -----------------------------------------------------------------------------
-
-// Colours
-$ntg-central-brand-colour-primary-blue-100: #afb5bfff;
-$ntg-central-brand-colour-primary-blue-200: #878f9fff;
-$ntg-central-brand-colour-primary-blue-300-light: #606a80ff;
-$ntg-central-brand-colour-primary-blue-400-mid: #384560ff;
-$ntg-central-brand-colour-primary-blue-600: #0d1b35ff;
-$ntg-central-brand-colour-primary-blue-700: #0b152bff;
-$ntg-central-brand-colour-primary-blue-800: #081020ff;
-$ntg-central-brand-colour-primary-blue-900: #050b15ff;
-$ntg-central-brand-colour-primary-blue-default: #102040ff;
-$ntg-central-brand-colour-primary-blue-primary-pale: #d0e0e0ff;
-$ntg-central-brand-colour-secondary-green-100-pale: #d2e7d2ff;
-$ntg-central-brand-colour-secondary-green-200: #8fc38fff;
-$ntg-central-brand-colour-secondary-green-300: #6ab06aff;
-$ntg-central-brand-colour-secondary-green-400-light: #20a030ff;
-$ntg-central-brand-colour-secondary-green-600-dark: #1b711bff;
-$ntg-central-brand-colour-secondary-green-700: #155b15ff;
-$ntg-central-brand-colour-secondary-green-800: #104410ff;
-$ntg-central-brand-colour-secondary-green-900: #0b2d0bff;
-$ntg-central-brand-colour-secondary-green-default: #208820ff;
-$ntg-central-brand-colour-tertiary-orange-100-pale: #fce4d8ff;
-$ntg-central-brand-colour-tertiary-orange-200: #f1a383ff;
-$ntg-central-brand-colour-tertiary-orange-300: #ed855aff;
-$ntg-central-brand-colour-tertiary-orange-400-mid: #e47024ff;
-$ntg-central-brand-colour-tertiary-orange-600-dark: #c43004ff;
-$ntg-central-brand-colour-tertiary-orange-700: #983005ff;
-$ntg-central-brand-colour-tertiary-orange-800: #722404ff;
-$ntg-central-brand-colour-tertiary-orange-900: #4c1803ff;
-$ntg-central-brand-colour-tertiary-orange-default: #e44808ff;
-$ntg-central-brand-colour-neutrals-grey-050: #eeeff0ff;
-$ntg-central-brand-colour-neutrals-grey-100: #e3e5e6ff;
-$ntg-central-brand-colour-neutrals-grey-200: #d5d7d9ff;
-$ntg-central-brand-colour-neutrals-grey-300: #c8cacdff;
-$ntg-central-brand-colour-neutrals-grey-400: #acb0b4ff;
-$ntg-central-brand-colour-neutrals-grey-600: #8f9396ff;
-$ntg-central-brand-colour-neutrals-grey-800-neutral: #6c7074ff;
-$ntg-central-brand-colour-neutrals-grey-850: #56585aff;
-$ntg-central-brand-colour-neutrals-grey-900: #393b3cff;
-$ntg-central-brand-colour-neutrals-grey-white: #ffffffff;
-$ntg-central-brand-colour-neutrals-grey-black: #000000ff;
-$ntg-central-brand-colour-neutrals-lightblue-100: #ecf0f0ff;
-$ntg-central-brand-colour-neutrals-lightblue-150: #dae4e5ff;
-$ntg-central-brand-colour-neutrals-lightblue-200-neutral: #dce0e4ff;
-$ntg-central-brand-colour-neutrals-lightblue-600: #b0babbff;
-$ntg-central-brand-colour-neutrals-lightblue-700: #8d9595ff;
-$ntg-central-brand-colour-neutrals-lightblue-800: #696f70ff;
-$ntg-central-brand-colour-neutrals-lightblue-900: #464a4bff;
-$ntg-central-brand-colour-neutrals-lightblue-default: #d3dfe0ff;
-
-// Brand Typography
-$ntg-central-brand-typography-font-family-primary: "Roboto";
-$ntg-central-brand-typography-text-colours-text-heading-default: $ntg-central-brand-colour-primary-blue-default;
-$ntg-central-brand-typography-text-colours-text-body-default: $ntg-central-brand-colour-primary-blue-default;
-$ntg-central-brand-typography-text-colours-text-moderate: $ntg-central-brand-colour-primary-blue-400-mid;
-$ntg-central-brand-typography-text-colours-text-accent-subtle: $ntg-central-brand-colour-primary-blue-300-light;
-$ntg-central-brand-typography-text-colours-text-action: $ntg-central-brand-colour-primary-blue-default;
-$ntg-central-brand-typography-text-colours-text-inverted: $ntg-central-brand-colour-neutrals-grey-white;
-$ntg-central-brand-typography-text-colours-text-hover: $ntg-central-brand-colour-secondary-green-600-dark;
-$ntg-central-brand-typography-text-colours-text-disabled: $ntg-central-brand-colour-neutrals-grey-800-neutral;
-$ntg-central-brand-typography-text-colours-text-info: $semantic-colours-info-blue-default;
-$ntg-central-brand-typography-text-colours-text-success: $semantic-colours-success-green-default;
-$ntg-central-brand-typography-text-colours-text-warning: $semantic-colours-warning-orange-default;
-$ntg-central-brand-typography-text-colours-text-error: $semantic-colours-danger-red-default;
-
-// Branded Elements
-$ntg-central-brand-branded-elements-surface-colours-page-primary: $ntg-central-brand-colour-neutrals-grey-white;
-$ntg-central-brand-branded-elements-surface-colours-page-secondary: $ntg-central-brand-colour-neutrals-lightblue-100;
-$ntg-central-brand-branded-elements-surface-colours-background-dark: $ntg-central-brand-colour-primary-blue-default;
-$ntg-central-brand-branded-elements-surface-colours-action-primary: $ntg-central-brand-colour-primary-blue-default;
-$ntg-central-brand-branded-elements-surface-colours-action-primary-hover: $ntg-central-brand-colour-primary-blue-400-mid;
-$ntg-central-brand-branded-elements-surface-colours-action-disabled: $ntg-central-brand-colour-neutrals-lightblue-200-neutral;
-$ntg-central-brand-branded-elements-surface-colours-background-info: $semantic-colours-info-blue-50;
-$ntg-central-brand-branded-elements-surface-colours-background-success: $semantic-colours-success-green-50;
-$ntg-central-brand-branded-elements-surface-colours-background-warning: $semantic-colours-warning-orange-50;
-$ntg-central-brand-branded-elements-surface-colours-background-error: $semantic-colours-danger-red-50;
-$ntg-central-brand-branded-elements-surface-colours-action-secondary: $ntg-central-brand-colour-neutrals-grey-white;
-$ntg-central-brand-branded-elements-surface-colours-action-secondary-hover: $ntg-central-brand-colour-primary-blue-400-mid;
-$ntg-central-brand-branded-elements-surface-colours-action-tertiary: $ntg-central-brand-colour-secondary-green-default;
-$ntg-central-brand-branded-elements-surface-colours-action-tertiary-hover: $ntg-central-brand-colour-secondary-green-400-light;
-$ntg-central-brand-branded-elements-surface-colours-action-pressed: $ntg-central-brand-colour-primary-blue-200;
-$ntg-central-brand-branded-elements-border-accent-colours-border-primary: $ntg-central-brand-colour-primary-blue-default;
-$ntg-central-brand-branded-elements-border-accent-colours-border-secondary: $ntg-central-brand-colour-secondary-green-default;
-$ntg-central-brand-branded-elements-border-accent-colours-border-subtle: $ntg-central-brand-colour-neutrals-lightblue-600;
-$ntg-central-brand-branded-elements-border-accent-colours-focus: $ntg-central-brand-colour-secondary-green-300;
-$ntg-central-brand-branded-elements-border-accent-colours-border-info: $semantic-colours-info-blue-default;
-$ntg-central-brand-branded-elements-border-accent-colours-border-success: $semantic-colours-success-green-default;
-$ntg-central-brand-branded-elements-border-accent-colours-border-warning: $semantic-colours-warning-orange-default;
-$ntg-central-brand-branded-elements-border-accent-colours-border-error: $semantic-colours-danger-red-default;
-$ntg-central-brand-branded-elements-icon-colours-primary: $ntg-central-brand-colour-primary-blue-default;
-$ntg-central-brand-branded-elements-icon-colours-inverted: $ntg-central-brand-colour-neutrals-grey-white;
-$ntg-central-brand-branded-elements-icon-colours-secondary: $ntg-central-brand-colour-secondary-green-default;
-$ntg-central-brand-branded-elements-corner-radius-none: $spacing-0;
-$ntg-central-brand-branded-elements-corner-radius-sm: $spacing-8;
-$ntg-central-brand-branded-elements-corner-radius-md: $spacing-20;
-$ntg-central-brand-branded-elements-corner-radius-lg: $spacing-32;
-$ntg-central-brand-branded-elements-border-width-none: $spacing-0;
-$ntg-central-brand-branded-elements-border-width-sm: $spacing-1;
-$ntg-central-brand-branded-elements-border-width-md: $spacing-2;
-$ntg-central-brand-branded-elements-border-width-lg: $spacing-4;
-
 // General Tokens
 // -----------------------------------------------------------------------------
 
@@ -394,26 +291,6 @@ $color-ntg-ignore-semantic-info-blue: #107cc0ff;
 $color-ntg-ignore-semantic-alert-yellow: #fcc000ff;
 $color-ntg-ignore-semantic-success-green: #107810ff;
 $color-ntg-ignore-semantic-error-red: #c43004ff;
-$color-ntg-central-ignore-primary-blue-blue-default: #102040ff;
-$color-ntg-central-ignore-primary-blue-blue-mid: #304060ff;
-$color-ntg-central-ignore-primary-blue-blue-light: #506080ff;
-$color-ntg-central-ignore-primary-blue-blue-pale: #d0e0e0ff;
-$color-ntg-central-ignore-secondary-green-green-default: #208820ff;
-$color-ntg-central-ignore-secondary-green-green-dark: #107810ff;
-$color-ntg-central-ignore-secondary-green-green-mid: #20a030ff;
-$color-ntg-central-ignore-secondary-green-green-pale: #dcf0dcff;
-$color-ntg-central-ignore-tertiary-orange-orange-default: #e44808ff;
-$color-ntg-central-ignore-tertiary-orange-orange-dark: #c43004ff;
-$color-ntg-central-ignore-tertiary-orange-orange-mid: #e47024ff;
-$color-ntg-central-ignore-tertiary-orange-orange-pale: #fce4d8ff;
-$color-ntg-central-ignore-neutrals-neutral-900: #6c7074ff;
-$color-ntg-central-ignore-neutrals-neutral-400: #acb0b4ff;
-$color-ntg-central-ignore-neutrals-neutral-200: #d3dfe0ff;
-$color-ntg-central-ignore-neutrals-neutral-100: #ecf0f0ff;
-$color-ntg-central-ignore-semantic-info-blue: #107cc0ff;
-$color-ntg-central-ignore-semantic-success-green: #107810ff;
-$color-ntg-central-ignore-semantic-alert-yellow: #fcc000ff;
-$color-ntg-central-ignore-semantic-error-red: #c43004ff;
 
 // Grid
 $grid-mobile-320px: (

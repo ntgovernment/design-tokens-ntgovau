@@ -43,6 +43,27 @@ function App() {
       <button className="btn btn-primary">Primary Action</button>
       <button className="btn btn-secondary">Secondary Action</button>
       <button className="btn back-to-top">Back to Top</button>
+
+      {/* Accordion Example */}
+      <div className="accordion" id="accordionExample">
+        <div className="accordion-item">
+          <h2 className="accordion-header">
+            <button
+              className="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+            >
+              Accordion Item #1
+            </button>
+          </h2>
+          <div id="collapseOne" className="accordion-collapse collapse show">
+            <div className="accordion-body">
+              This is the first item's accordion body with NT.GOV.AU styling.
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
@@ -51,7 +72,7 @@ function App() {
 ## 🎨 Features
 
 - **Bootstrap Compatible**: All standard Bootstrap classes work unchanged
-- **Design Token Driven**: Built from NT.GOV.AU design tokens  
+- **Design Token Driven**: Built from NT.GOV.AU design tokens
 - **CSS Custom Properties**: Easy runtime theme switching
 - **Component Focused**: Systematic component customization
 - **Multi-Theme Ready**: Designed for theme switching applications
@@ -67,6 +88,7 @@ design-tokens-ntgovau/
 │   ├── index.scss          # Main theme entry point
 │   ├── _buttons.scss       # Button customizations
 │   ├── _backtotopbutton.scss # Back-to-top button component
+│   ├── _accordion.scss     # Accordion component with bottom-border styling
 │   └── _*.scss            # Other component customizations
 ├── dist/
 │   └── ntgovau-theme.css   # Compiled theme
@@ -87,8 +109,10 @@ design-tokens-ntgovau/
 ### Available Components
 
 Currently implemented components:
+
 - **Buttons** - Primary, secondary, tertiary variants with all Bootstrap states
 - **Back-to-Top Button** - Special ochre-colored button using `.btn.back-to-top`
+- **Accordion** - Full Bootstrap 5.2+ accordion with NT.GOV.AU styling, bottom-border-only design, and enhanced focus states for accessibility
 - **Typography** - NT.GOV.AU font family and color system
 - **Color Utilities** - Text, background, and border color classes
 
@@ -161,6 +185,7 @@ A specialized button component using NT.GOV.AU ochre color:
 ```
 
 Features:
+
 - Uses secondary ochre color (`#c33826`)
 - White text for accessibility
 - Darker hover state (`#a22f20`)

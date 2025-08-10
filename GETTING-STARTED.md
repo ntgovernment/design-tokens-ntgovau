@@ -11,7 +11,8 @@ design-tokens-ntgovau/
 ├── 📁 src/
 │   ├── 🎯 index.scss          # Main theme entry point
 │   ├── 🔘 _buttons.scss       # Button component customization
-│   └── 🔙 _backtotopbutton.scss # Back-to-top button component
+│   ├── 🔙 _backtotopbutton.scss # Back-to-top button component
+│   └── 📋 _accordion.scss     # Accordion component with NT.GOV.AU styling
 ├── 📁 examples/              # Preview files and React examples
 ├── 📄 package.json           # Build configuration
 └── 📚 README.md              # Complete documentation
@@ -22,6 +23,7 @@ design-tokens-ntgovau/
 ### ✅ Build Process Fixed
 
 The SCSS compilation now works without deprecation warnings:
+
 - Uses modern `@use` syntax instead of deprecated `@import`
 - Proper variable imports in all component files
 - Clean build output with no warnings
@@ -47,6 +49,7 @@ npm run all
 # Quick preview
 npm run preview
 ```
+
 npm run build:dev
 
 ### ✅ Test Your Theme
@@ -56,17 +59,28 @@ Open `examples/preview.html` in your browser to see your theme in action.
 ### ✅ Current Components Implemented
 
 1. **Button Components** (`src/_buttons.scss`)
+
    - Primary, secondary, tertiary variants
    - All Bootstrap button states (hover, active, disabled)
    - Small, default, and large sizes
    - Uses Bootstrap CSS custom properties (`--bs-btn-*`)
 
 2. **Back-to-Top Button** (`src/_backtotopbutton.scss`)
+
    - Special ochre-colored component
    - Usage: `<button class="btn back-to-top">Back to Top</button>`
    - Uses NT.GOV.AU secondary ochre color
 
-3. **Typography System**
+3. **Accordion Component** (`src/_accordion.scss`)
+
+   - Full Bootstrap 5.2+ accordion implementation
+   - NT.GOV.AU design token integration for all styling
+   - Bottom-border-only design for cleaner appearance
+   - Enhanced focus states with complete border and box-shadow rings for accessibility
+   - CSS custom properties support (`--bs-accordion-*`)
+   - Usage: Standard Bootstrap accordion markup with automatic styling
+
+4. **Typography System**
    - NT.GOV.AU Lato font family
    - Proper color mapping from design tokens
 
@@ -86,6 +100,7 @@ Follow this pattern for new components:
 ```
 
 Then import it in `src/index.scss`:
+
 ```scss
 @use "forms";
 ```
@@ -150,11 +165,13 @@ import 'design-tokens-ntgovau/dist/ntgovau-theme.css';
 ## ✅ What Works Now
 
 ### Build System
+
 - Modern Sass with `@use` syntax (no warnings)
 - Multiple build targets (dev, production, watch)
 - Clean CSS output with sourcemaps
 
 ### Components
+
 - **Primary buttons**: NT.GOV.AU blue (`#1f1f5f`)
 - **Secondary buttons**: White with blue border
 - **Tertiary buttons**: Outline style
@@ -162,6 +179,7 @@ import 'design-tokens-ntgovau/dist/ntgovau-theme.css';
 - **All button sizes**: sm, default, lg
 
 ### Integration
+
 - Bootstrap CDN + theme override pattern
 - React-ready with theme switching capability
 - Complete documentation and examples

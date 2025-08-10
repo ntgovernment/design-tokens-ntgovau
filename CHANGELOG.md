@@ -4,33 +4,63 @@ All notable changes to the NT.GOV.AU Bootstrap Theme project.
 
 ## [1.0.0] - 2025-08-10
 
+### 🆕 Recent Updates (August 10, 2025)
+
+#### Accessibility Improvements
+
+- **Enhanced Accordion Focus States** - Improved keyboard navigation and accessibility
+  - Complete focus ring with border and box-shadow around entire accordion button
+  - Focus border uses NT.GOV.AU primary blue color for brand consistency
+  - Box-shadow provides 0.25rem focus ring with 25% opacity for optimal visibility
+  - Meets WCAG accessibility guidelines for focus indication
+  - Enhanced keyboard navigation experience for all users
+
 ### ✅ Completed Features
 
+#### Documentation Updates
+
+- **Comprehensive Documentation Suite** - Complete documentation for all components
+  - Updated README.md with accordion component examples
+  - Enhanced USAGE.md with detailed component usage instructions
+  - Expanded GETTING-STARTED.md with accordion implementation details
+  - Created comprehensive REACT-INTEGRATION.md with React examples and best practices
+  - Updated CHANGELOG.md with complete feature tracking
+
 #### Build System
+
 - Modern Sass compilation with `@use` syntax (no deprecation warnings)
 - Multiple build scripts: `dev`, `build`, `watch`, `all`, `preview`
 - Clean CSS output with sourcemaps
 - Bootstrap CDN integration in examples
 
 #### Components Implemented
+
 - **Button System** - Complete Bootstrap button component override
   - Primary, secondary, tertiary variants
   - Small, default, large sizes
   - All Bootstrap states (normal, hover, active, disabled)
   - Uses CSS custom properties for theme switching
-  
 - **Back-to-Top Button** - Special component using NT.GOV.AU ochre
   - Class: `.btn.back-to-top`
   - Color: Secondary ochre (`#c33826`)
   - Hover state: Darker ochre (`#a22f20`)
+- **Accordion Component** - Full Bootstrap 5.2+ accordion implementation
+  - Complete CSS custom properties support using `--bs-accordion-*` variables
+  - NT.GOV.AU design token integration for colors, typography, and spacing
+  - Custom styling with bottom-border-only design for cleaner appearance
+  - Font family, size, weight, and line-height using design tokens
+  - Focus states and hover effects with NT.GOV.AU colors
+  - Icon integration with primary blue color from design tokens
 
 #### Design Token Integration
+
 - Complete mapping of NT.GOV.AU design tokens to Bootstrap CSS variables
 - CSS custom properties for runtime theme switching
 - Color system: Primary blue, secondary gray, semantic colors
 - Typography: Lato font family with proper weights and sizes
 
 #### Documentation
+
 - Updated README.md with current project state
 - Updated GETTING-STARTED.md with working instructions
 - Complete examples in `examples/preview.html`
@@ -39,18 +69,21 @@ All notable changes to the NT.GOV.AU Bootstrap Theme project.
 ### 🔧 Technical Improvements
 
 #### Sass Architecture
+
 - Fixed import paths using `@use` syntax
 - Proper variable scope with `@use "../variables" as *`
 - Modular component structure
 - No build warnings or deprecation messages
 
 #### CSS Output
+
 - Development build: 240+ lines of expanded CSS
 - Production build: Minified CSS with sourcemaps
 - Proper CSS custom property cascade
 - Bootstrap compatibility maintained
 
 #### Examples and Testing
+
 - Complete preview page with Bootstrap CDN
 - All button variants and states demonstrated
 - Color system showcase
@@ -82,6 +115,7 @@ design-tokens-ntgovau/
 ### 🎯 Ready for Production
 
 This theme is now production-ready for:
+
 - Integration into React applications
 - Theme switching systems
 - NT.GOV.AU web properties
@@ -90,6 +124,7 @@ This theme is now production-ready for:
 ### 🔄 Next Steps for Extension
 
 To add more components, follow the established pattern:
+
 1. Create new `_component.scss` file in `src/`
 2. Use `@use "../variables" as *` for design tokens
 3. Override Bootstrap CSS custom properties
