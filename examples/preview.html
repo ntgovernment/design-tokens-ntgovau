@@ -15,6 +15,74 @@
   </head>
   <body>
     <header class="container-xl">
+      <nav
+        class="breadcrumb d-flex align-items-center gap-2"
+        aria-label="breadcrumb"
+      >
+        <button class="btn btn-tertiary btn-sm">
+          <span class="">Home</span></button
+        ><svg
+          data-prefix="fas"
+          data-icon="chevron-right"
+          class="svg-inline--fa fa-chevron-right fa-sm ntg-icon"
+          role="img"
+          viewBox="0 0 320 512"
+          aria-hidden="true"
+        >
+          <path
+            fill="currentColor"
+            d="M311.1 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L243.2 256 73.9 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+          ></path></svg
+        ><button class="btn btn-tertiary btn-sm">
+          <span class="">Services</span></button
+        ><svg
+          data-prefix="fas"
+          data-icon="chevron-right"
+          class="svg-inline--fa fa-chevron-right fa-sm ntg-icon"
+          role="img"
+          viewBox="0 0 320 512"
+          aria-hidden="true"
+        >
+          <path
+            fill="currentColor"
+            d="M311.1 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L243.2 256 73.9 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+          ></path></svg
+        ><button class="btn btn-tertiary btn-sm">
+          <span class="">Licenses &amp; Permits</span></button
+        ><svg
+          data-prefix="fas"
+          data-icon="chevron-right"
+          class="svg-inline--fa fa-chevron-right fa-sm ntg-icon"
+          role="img"
+          viewBox="0 0 320 512"
+          aria-hidden="true"
+        >
+          <path
+            fill="currentColor"
+            d="M311.1 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L243.2 256 73.9 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+          ></path></svg
+        ><button class="btn btn-tertiary btn-sm">
+          <span class="">Driver's License</span></button
+        ><svg
+          data-prefix="fas"
+          data-icon="chevron-right"
+          class="svg-inline--fa fa-chevron-right fa-sm ntg-icon"
+          role="img"
+          viewBox="0 0 320 512"
+          aria-hidden="true"
+        >
+          <path
+            fill="currentColor"
+            d="M311.1 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L243.2 256 73.9 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+          ></path></svg
+        ><button
+          class="btn btn-tertiary btn-sm"
+          disabled=""
+          aria-current="page"
+        >
+          <span class="">License Renewal</span>
+        </button>
+      </nav>
       <h1>NT.GOV.AU Bootstrap Theme Preview</h1>
       <p>
         This preview shows how Bootstrap components look with NT.GOV.AU design
@@ -26,100 +94,110 @@
       <!-- Back to Accordion -->
       <section class="example-section my-5">
         <h2>Accordion example</h2>
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
+        <div>
+          <div
+            style="
+              display: flex;
+              justify-content: flex-end;
+              gap: 0.5rem;
+              margin-bottom: 0.5rem;
+            "
+          >
+            <button class="btn btn-tertiary btn-sm">
+              <span class="">Open all</span></button
+            ><button class="btn btn-tertiary btn-sm">
+              <span class="">Close all</span>
+            </button>
+          </div>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2
+                class="accordion-header"
+                id="accordionExample-heading-collapseOne"
               >
-                Accordion Item #1
-              </button>
-            </h2>
-            <div
-              id="collapseOne"
-              class="accordion-collapse collapse show"
-              aria-labelledby="headingOne"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <strong>This is the first item's accordion body.</strong> It is
-                shown by default, until the collapse plugin adds the appropriate
-                classes that we use to style each element. These classes control
-                the overall appearance, as well as the showing and hiding via
-                CSS transitions. You can modify any of this with custom CSS or
-                overriding our default variables. It's also worth noting that
-                just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#accordionExample-collapse-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="accordionExample-collapse-collapseOne"
+                >
+                  Accordion Item #1
+                </button>
+              </h2>
+              <div
+                id="accordionExample-collapse-collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="accordionExample-heading-collapseOne"
+              >
+                <div class="accordion-body">
+                  <div>
+                    <strong>This is the first item's accordion body.</strong> It
+                    is shown by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element.
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
+            <div class="accordion-item">
+              <h2
+                class="accordion-header"
+                id="accordionExample-heading-collapseTwo"
               >
-                Accordion Item #2
-              </button>
-            </h2>
-            <div
-              id="collapseTwo"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingTwo"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth
-                noting that just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#accordionExample-collapse-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="accordionExample-collapse-collapseTwo"
+                >
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div
+                id="accordionExample-collapse-collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="accordionExample-heading-collapseTwo"
+              >
+                <div class="accordion-body">
+                  <div>
+                    <strong>This is the second item's accordion body.</strong>
+                    It is hidden by default, until the collapse plugin adds the
+                    appropriate classes.
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree"
+            <div class="accordion-item">
+              <h2
+                class="accordion-header"
+                id="accordionExample-heading-collapseThree"
               >
-                Accordion Item #3
-              </button>
-            </h2>
-            <div
-              id="collapseThree"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingThree"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth
-                noting that just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#accordionExample-collapse-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="accordionExample-collapse-collapseThree"
+                >
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div
+                id="accordionExample-collapse-collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="accordionExample-heading-collapseThree"
+              >
+                <div class="accordion-body">
+                  <div>
+                    <strong>This is the third item's accordion body.</strong> It
+                    is hidden by default, until the collapse plugin adds the
+                    appropriate classes.
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -193,6 +271,16 @@
           <button class="btn btn-primary">Normal State</button>
           <button class="btn btn-primary active">Active State</button>
           <button class="btn btn-primary" disabled>Disabled State</button>
+        </div>
+        <div class="button-group my-2">
+          <button class="btn btn-secondary">Normal State</button>
+          <button class="btn btn-secondary active">Active State</button>
+          <button class="btn btn-secondary" disabled>Disabled State</button>
+        </div>
+        <div class="button-group my-2">
+          <button class="btn btn-tertiary">Normal State</button>
+          <button class="btn btn-tertiary active">Active State</button>
+          <button class="btn btn-tertiary" disabled>Disabled State</button>
         </div>
       </section>
     </main>

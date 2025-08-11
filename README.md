@@ -297,16 +297,16 @@ A complete Bootstrap 5.2+ accordion implementation with NT.GOV.AU styling:
 
 #### Accordion Features
 
-- **Color Scheme**: 
+- **Color Scheme**:
   - Default: Primary blue text and icons (`#1f1f5f`)
   - Hover: Ochre text and icons (`#c33826`)
   - Focus: Orange border with proper box-shadow
 - **Border Styling**: Only bottom borders for a clean, minimal look
-- **Icon Behavior**: 
+- **Icon Behavior**:
   - Collapsed state: Chevron pointing down
   - Expanded state: Chevron pointing up with smooth rotation
   - Hover state: Icons change to ochre color
-- **Accessibility**: 
+- **Accessibility**:
   - Enhanced focus states with `$effect-nt-gov-focus-state-border`
   - Complete border focus indicator (not just bottom border)
   - Proper ARIA attributes maintained
@@ -329,7 +329,7 @@ Accordions require Bootstrap JavaScript for collapse functionality:
 Or import specifically in JavaScript:
 
 ```javascript
-import { Collapse } from 'bootstrap';
+import { Collapse } from "bootstrap";
 ```
 
 ### Typography
@@ -370,6 +370,7 @@ To create additional themes (e.g., Central Australia variant):
 - `examples/ThemeSwitcher.jsx` - Theme switching implementation (if available)
 
 The preview file includes:
+
 - All button variants and states
 - Working accordion with Bootstrap JavaScript
 - Typography examples

@@ -23,7 +23,7 @@ $accordion-icon-transform: rotate(
   --bs-accordion-inner-border-radius: #{$nt-gov-au-brand-basic-branded-elements-corner-radius-none};
   --bs-accordion-btn-padding-x: #{$spacing-24};
   --bs-accordion-btn-padding-y: #{$spacing-24};
-  --bs-accordion-btn-color: var(--primary);
+  --bs-accordion-btn-color: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-action-primary};
   --bs-accordion-btn-bg: #{$nt-gov-au-brand-colours-neutrals-grey-white};
   --bs-accordion-btn-font-family: #{$nt-gov-au-brand-typography-font-family-primary};
   --bs-accordion-btn-font-size: #{$typography-sizing-font-size-heading-h5};
@@ -38,7 +38,7 @@ $accordion-icon-transform: rotate(
   --bs-accordion-btn-focus-box-shadow: #{$effect-nt-gov-focus-state-border};
   --bs-accordion-body-padding-x: #{$spacing-24};
   --bs-accordion-body-padding-y: #{$spacing-24};
-  --bs-accordion-active-color: var(--primary);
+  --bs-accordion-active-color: #{$nt-gov-au-brand-typography-text-colours-text-action};
   --bs-accordion-active-bg: $color-ntg-ignore-neutrals-grey-400;
 }
 

@@ -1,10 +1,19 @@
 // Button component customization using Bootstrap CSS custom properties
 // This approach maintains Bootstrap compatibility while applying NT.GOV.AU design tokens
+//
+// Features:
+// - Consistent disabled text color across all button variants using NT.GOV.AU neutrals-grey-700
+// - Primary, secondary, and tertiary button variants with proper NT.GOV.AU styling
+// - Size variants (small, default, large) with appropriate spacing and typography
+// - Focus states using NT.GOV.AU orange focus border
+// - Hover and active states using ochre color for tertiary buttons
+// - Transparent design for tertiary buttons maintaining brand consistency
 
 @use "../variables" as *;
 
 .btn {
   // Override Bootstrap's button CSS custom properties with NT.GOV.AU values
+  // Base button styles that apply to all variants
   --bs-btn-padding-x: #{$spacing-16};
   --bs-btn-padding-y: #{$spacing-8};
   --bs-btn-font-family: var(--bs-font-sans-serif);
@@ -21,6 +30,7 @@
   --bs-btn-border-radius: #{$nt-gov-au-brand-basic-branded-elements-corner-radius-none};
   --bs-btn-box-shadow: none;
   --bs-btn-disabled-opacity: 0.65;
+  --bs-btn-disabled-color: #{$nt-gov-au-brand-colours-neutrals-grey-700}; // Consistent disabled text color for all variants
   --bs-btn-focus-box-shadow: 0 0 0 0.25rem #{$nt-gov-au-brand-basic-branded-elements-border-accent-colours-focus-tbd};
 
   // Apply the custom properties
@@ -90,7 +100,7 @@
   --bs-btn-border-radius: #{$nt-gov-au-brand-basic-branded-elements-corner-radius-none};
 }
 
-// Primary button variant
+// Primary button variant - Solid button with NT.GOV.AU primary blue background
 .btn-primary {
   --bs-btn-font-weight: 600;
   --bs-btn-color: #{$nt-gov-au-brand-typography-text-colours-text-inverted};
@@ -103,12 +113,11 @@
   --bs-btn-active-color: #{$nt-gov-au-brand-typography-text-colours-text-inverted};
   --bs-btn-active-bg: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-action-pressed};
   --bs-btn-active-border-color: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-action-pressed};
-  --bs-btn-disabled-color: #{$nt-gov-au-brand-typography-text-colours-text-inverted};
   --bs-btn-disabled-bg: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-action-disabled};
   --bs-btn-disabled-border-color: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-action-disabled};
 }
 
-// Secondary button variant
+// Secondary button variant - Outlined button with primary blue border and text
 .btn-secondary {
   --bs-btn-font-weight: 600;
   --bs-btn-color: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-action-primary};
@@ -121,12 +130,11 @@
   --bs-btn-active-color: #{$nt-gov-au-brand-typography-text-colours-text-inverted};
   --bs-btn-active-bg: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-action-pressed};
   --bs-btn-active-border-color: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-action-pressed};
-  --bs-btn-disabled-color: #{$nt-gov-au-brand-typography-text-colours-text-disabled};
   --bs-btn-disabled-bg: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-action-disabled};
   --bs-btn-disabled-border-color: #{$nt-gov-au-brand-basic-branded-elements-border-accent-colours-border-subtle};
 }
 
-// Tertiary variant
+// Tertiary variant - Text-only button with ochre hover states and transparent design
 .btn-tertiary {
   --bs-btn-border-radius: #{$nt-gov-au-brand-basic-branded-elements-corner-radius-sm};
   --bs-btn-color: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-action-primary};
@@ -136,10 +144,9 @@
   --bs-btn-hover-bg: transparent;
   --bs-btn-hover-border-color: transparent;
   --bs-btn-focus-shadow-rgb: var(--bs-btn-focus-box-shadow);
-  --bs-btn-active-color: #{$nt-gov-au-brand-typography-text-colours-text-inverted};
+  --bs-btn-active-color: #{$nt-gov-au-brand-colours-secondary-ochre-600};
   --bs-btn-active-bg: transparent;
   --bs-btn-active-border-color: transparent;
-  --bs-btn-disabled-color: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-action-primary};
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-action-primary};
+  --bs-btn-disabled-border-color: transparent;
 }

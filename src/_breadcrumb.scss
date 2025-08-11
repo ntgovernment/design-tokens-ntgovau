@@ -1,0 +1,13 @@
+@use "../variables" as *;
+
+// Breadcrumb component customization using Bootstrap CSS custom properties
+// This approach maintains Bootstrap compatibility while applying NT.GOV.AU design tokens
+
+.breadcrumb {
+  svg {
+    height: #{$typography-sizing-font-size-body-sm};
+    width: #{$typography-sizing-font-size-body-sm};
+    flex-shrink: 0;
+    color: #{$nt-gov-au-brand-colours-secondary-ochre-default};
+  }
+}
